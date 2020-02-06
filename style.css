@@ -268,9 +268,10 @@ nav #menu li a:hover {
       line-height: 58px;
 }
 
+
 @media(max-width: 768px) {
       .header h1 {
-            font-size: 26px;
+            font-size: 50px;
       }
 }
 

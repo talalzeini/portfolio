@@ -1,5 +1,4 @@
 
-/*--------------- basic styling --------------- */
 html, body {
       margin: 0;
       padding: 0;
@@ -29,7 +28,6 @@ html, body {
       }
 }
 
-/*--------------- typewriter effect --------------- */
 .line {
       width: 24em;
       top: 50%;
