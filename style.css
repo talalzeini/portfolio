@@ -145,10 +145,10 @@ nav #menu li a:hover {
       height: 30px;
       cursor: pointer;
       float: right;
-      transition: all 0.3s ease-out;
+      transition: all 0.1s ease-out;
       visibility: hidden;
       opacity: 0;
-      transition: all 0.5s ease-out;
+
 }
 #toggle:hover{
       color:#99ff66;
@@ -252,8 +252,6 @@ nav #menu li a:hover {
             visibility: hidden !important;
       }
 }
-
-/*--------------- hero section --------------- */
 .hero {
       height: 100vh;
       display: flex;
@@ -275,7 +273,6 @@ nav #menu li a:hover {
       }
 }
 
-/*--------------- scroll down icon animation --------------- */
 .scroll-down {
       position: absolute;
       left: 50%;
@@ -308,7 +305,6 @@ nav #menu li a:hover {
       }
 }
 
-/*--------------- projects section --------------- */
 h6 {
       text-align: center;
 }
@@ -321,25 +317,6 @@ h6 {
       left: 50%;
 }
 
-
-
-
-@media(max-width: 768px) {
-      .project {
-            width: 90% !important;
-            margin: 14px auto;
-      }
-
-      .vertical {
-            display: none;
-      }
-
-      .project1::after, .project2::after, .project3::after, .project4::after {
-            display: none;
-      }
-}
-
-/*--------------- footer section --------------- */
 .collab {
       text-align: right;
 }
@@ -383,16 +360,16 @@ h6 {
 }
 
 #media ul li {
-      display: inline-block; 
+display: inline-block;
+ position: relative;
+ width:50px;
+ padding:10%;
 }
 #media ul li a{
-    height: 4px;
-  width: 50%;
-  font-size: 50px;
-   list-style:none;
-   color: white;
- transition: color 0.5s ease-out;
-   transition: font-size 0.1s ease-out;
+      font-size: 50px;
+      color: white;
+    transition: color 0.5s ease-out;
+      transition: font-size 0.1s ease-out;
 }
 #media ul li a:hover{
    color: #99ff66;
@@ -400,10 +377,7 @@ h6 {
 
 }
 #media ul span li a{
-    height: 4px;
-  width: 50%;
   font-size: 50px;
-   list-style:none;
    color: white;
  transition: color 0.5s ease-out;
    transition: font-size 0.1s ease-out;
@@ -414,13 +388,10 @@ h6 {
 
 }
 #media ul span span span li a{
-    height: 4px;
-  width: 50%;
-  font-size: 50px;
-   list-style:none;
-   color: white;
- transition: color 0.5s ease-out;
-   transition: font-size 0.1s ease-out;
+      font-size: 50px;
+      color: white;
+    transition: color 0.5s ease-out;
+      transition: font-size 0.1s ease-out;
 }
 #media ul span span span li a:hover{
    font-size:60px;
@@ -428,13 +399,10 @@ h6 {
 
 }
 #media ul span span li a{
-    height: 4px;
-  width: 50%;
-  font-size: 50px;
-   list-style:none;
-   color: white;
- transition: color 0.5s ease-out;
-   transition: font-size 0.1s ease-out;
+      font-size: 50px;
+      color: white;
+    transition: color 0.5s ease-out;
+      transition: font-size 0.1s ease-out;
 }
 #media ul span span li a:hover{
    font-size:60px;
@@ -593,12 +561,21 @@ textarea:focus {
   font-family: 'Courier New', sans-serif;
 }
 .box-img{
-  background: url(bg.jpg);
+  background: url(mainimage.jpg);
   background:cover;
   background-size:100%;
   border-radius: 50%;
   width: 250px;
   height: 250px;
+  transition: all 0.1s ease-out;
+}
+.box-img:hover { 
+      background: url(wink.jpg);
+      background:cover;
+      background-size:100%;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
 }
 .box h1{
   animation: fadeIn 2s;
