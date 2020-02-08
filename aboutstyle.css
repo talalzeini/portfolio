@@ -278,15 +278,11 @@ nav #menu li a:hover {
       bottom: 100px;
       display: block;
       text-align: center;
-      font-size: 20px;
       z-index: 0;
-      text-decoration: none;
-      text-shadow: 0;
       width: 13px;
       height: 13px;
-      border-bottom: 2px solid #fff;
-      border-right: 2px solid #fff;
-      -webkit-transform: translate(-50%, 0) rotate(45deg);
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
       animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
@@ -353,6 +349,7 @@ h6 {
 
 #media ul {
       list-style: none;
+     
 }
 
 #media ul li {
@@ -569,7 +566,7 @@ textarea:focus {
 .box h5{
   animation: fadeIn 4s;
   font-size: 80px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-weight: 100;
 }
 .box p{
@@ -585,8 +582,9 @@ ul{
   display: inline-block;
   list-style:none;
   position: relative;
-  right:5%;
+  right:4%;
 padding:4px;
+text-align: center;
 }
 .box li a {
   animation: fadeIn 2s;
@@ -599,8 +597,6 @@ padding:4px;
 
 .box li a:hover {
   color: #99ff66;
-
-
 }
 .box span li a {
   animation: fadeIn 2s;

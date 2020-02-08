@@ -78,7 +78,7 @@ html, body {
 /*--------------- navigation --------------- */
 nav {
       width: 100%;
-      background: transparent;
+      background: black;
       height: 80px;
       position: fixed;
       z-index: 1;
@@ -675,6 +675,5 @@ animation: fadeIn 2s;
   
     /* change this to change the size*/
 }
-
 
 
