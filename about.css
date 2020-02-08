@@ -634,7 +634,8 @@ transition: all 0.5s ease-out;
 }
 
 .box span li a:hover {
-color: #38A1F3;
+color: #ff4d4d;
+
 }
 .box li a:hover {
 color:#99ff66 ;
@@ -645,6 +646,12 @@ color: white;
 text-decoration: none;
 font-size: 60px;
 transition: all 0.5s ease-out;
+}
+.box.ayri .target{
+    visibility: hidden;
+}
+.box.ayri:hover .target{
+visibility: visible;
 }
 
 .box span span li a:hover {
@@ -668,7 +675,7 @@ transition: all 0.5s ease-out;
 }
 
 .box span span span li a:hover {
-color: #ff4d4d;
+color: ;
 
   /* change this to change the size*/
 }
@@ -688,7 +695,6 @@ color: #ff4d4d;
   * {
     box-sizing: border-box;
   }
-  
   
   
   /* Center website */
@@ -730,3 +736,4 @@ color: #ff4d4d;
     background-color: white;
     padding: 10px;
   }
+  
