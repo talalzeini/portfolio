@@ -588,7 +588,6 @@ font-family: 'Courier New', sans-serif;
 background: url(aboutprofile.jpg);
 background:cover;
 background-size:100%;
-border-radius: 50%;
 width: 250px;
 height: 250px;
 transition: all 0.1s ease-out;
@@ -658,12 +657,17 @@ transition: all 0.5s ease-out;
     font-size:20px;
     color:transparent;
     width:0;
+    text-align: center;
     white-space: nowrap;
     transition: 1s;
+    margin: auto;
+    transition:
 }
 
 .plane:hover .text{
+    text-align: center;
     color:white;
+    margin: auto;
 }
 .box span li a {
 animation: fadeIn 2s;
