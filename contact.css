@@ -8,6 +8,7 @@ html, body {
     font-family: "Roboto Mono" !important;
     background: black !important;
     color: #fff !important;
+    overflow-x: hidden;
 }
 
 .whitespace {
@@ -283,6 +284,8 @@ nav #menu li a:hover {
     text-shadow: 0;
     width: 13px;
     height: 13px;
+    position: relative;
+    top:50px;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
     -webkit-transform: translate(-50%, 0) rotate(0deg);
@@ -470,94 +473,6 @@ transition: color 0.5s ease-out;
 
 /*---------------about page --------------- */
 
-.about {
-    height: 500px;
-    margin-top: 120px;
-}
-
-.image {
-    background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
-}
-
-/*--------------- contact form --------------- */
-
-#contact-form {
-    margin: 5% 1.4%;
-    position: relative;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-form ul {
-    list-style: none;
-    border-radius: 5px;
-    margin-bottom: 40px;
-}
-
-#contact-form li {
-    padding: 10px;
-
-}
-
-#contact-form li:last-of-type {
-    border-bottom: none;
-}
-
-#contact-form label {
-    display: block;
-    font-size: .8em;
-    color: #999;
-    padding-left: 5px;
-}
-
-#contact-form input, #contact-form textarea {
-    width: 100%;
-    padding: 5px;
-    border: none;
-    resize: vertical;
-    background: transparent;
-    color: #fff;
-    font-weight: bolder;
-}
-
-input:focus {
-    outline: none;
-    border: none;
-}
-
-textarea:focus {
-    outline: none;
-    border: none;
-}
-
-.textarea {
-    border-bottom: 1px solid #dfdfdf;
-}
-
-.send {
-    margin-left: 50px;
-    text-transform: uppercase;
-    padding: 20px 30px;
-    background: transparent;
-    color: #dfdfdf;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-
-.send:hover {
-    background: #dfdfdf;
-    color: #101010;
-}
-
-@media(max-width: 768px) {
-    #contact-form {
-          margin: 5% -8%;
-          width: 98%;
-    }
-}
-
-/*--------------- project page --------------- */
 
 .prev, .next p {
     color: grey;
@@ -578,14 +493,17 @@ padding: 40px;
 text-align: center;
 margin-top: 5%;
 margin: auto;
-background: transparent;
+background: rgba(255, 255, 255, 0.1);
 color: white;
 position: relative;
+height:900px;
 top: 100px;
+border-radius: 30px;
+border-color: transparent;
 font-family: 'Courier New', sans-serif;
 }
 .box-img{
-background: url(aboutprofile.jpg);
+background: url(walking.jpg);
 background:cover;
 background-size:100%;
 width: 250px;
@@ -594,7 +512,8 @@ height: 250px;
 transition: all 0.1s ease-out;
 }
 .box-img:hover { 
-    transform:scale(1.25);
+    background: url(contacting.jpg);
+    transform:scale(1);
     background:cover;
     background-size:100%;
     border-radius: 50%;
@@ -604,13 +523,12 @@ transition: all 0.1s ease-out;
 .box h1{
 animation: fadeIn 2s;
 font-size: 50px;
-letter-spacing: 4px;
 font-weight: 100;
 }
 .box h5{
 animation: fadeIn 2s;
 font-size: 70px;
-letter-spacing: 3px;
+
 font-weight: 100;
 }
 .box h2 a{
@@ -771,4 +689,164 @@ transform:translate(-50%,-50%);
     background-color: white;
     padding: 10px;
   }
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.contact-us{
+    width: 100%;
+    background-size:100%;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+   bottom: 20px;
+    font-family: 'Courier New', sans-serif;
+}
+
+.form,
+.form-items{
+  width: 100%;
+}
+
+.form-items .email{
+  width: 100%;
+  margin:auto;
+  position: relative;
+  background-size:100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: white;
+  border: 0px;
+  border-radius: 30px;
+  transition: all 0.2s ease-out;
+}
+.form-items .email:hover{
+    width: 100%;
+    margin:auto;
+    position: relative;
+    background-size:100%;
+    border-color: red;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    transform: scale(1.1);
+    border: 2px;
+    border-radius: 30px;
+  }
+.form-items .subject{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: white;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.2s ease-out;
+  }
+  .form-items .subject:hover{
+    width: 100%;
+    transform: scale(1.1);
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+  }
+
+.form-items .message{
+
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: white;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+    resize: none;
+    transition: all 0.2s ease-out;
+}
+.form-items .message:hover{
+
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+    transform: scale(1.1);
+    resize: none;
+}
+.number {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
+}
+.number:hover {
+    width: 100%;
+    transform: scale(1.1);
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+}
+
+
+.submit{
+  font-size:15px;
+  background:white;
+
+  color: black;
+  padding: 12px;
+  border-radius: 25px;
+  width:100%;
+  border-color: transparent;
+  text-decoration: none;
+transition: all 0.2s ease-out;
+}
+
+.submit:hover{
+    font-size:15px;
+    background:#ebeef1;
+    transform: scale(1.1);
+    color: black;
+    padding: 12px;
+    border-radius: 25px;
+    width:100%;
+    border-color: transparent;
+    text-decoration: none;
   
+  }
+
+.submit .fas{
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.form-items{
+  position: relative;
+}
+
+.form-items .fas{
+  color: #9a99aa;
+}
+
+.button {
+    background: red;
+}
