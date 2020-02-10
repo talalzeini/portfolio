@@ -636,83 +636,80 @@ animation: fadeIn 2s;
 text-align: center;
 }
 ul{
-animation: fadeIn 2s;
-margin: 0px;
-padding: 0;
-}
-.box li{
-animation: fadeIn 2s;
-display: inline-block;
-list-style:none;
-}
-.box li a {
-animation: fadeIn 2s;
-color: white;
-text-decoration: none;
-font-size: 60px;
-transition: all 0.5s ease-out;
-}
-
-.plane .text{
-    font-size:20px;
-    color:transparent;
-    width:0;
-    text-align: center;
-    white-space: nowrap;
-    transition: 1s;
-    margin: auto;
-    transition:
-}
-
-.plane:hover .text{
-    text-align: center;
-    color:white;
-    margin: auto;
-}
-.box span li a {
-animation: fadeIn 2s;
-color: white;
-text-decoration: none;
-font-size: 60px;
-transition: all 0.5s ease-out;
-}
-
-.box span li a:hover {
-color: #ff4d4d;
-
-}
-.box li a:hover {
-color:orange ;
-}
-.box span span li a {
-animation: fadeIn 2s;
-color: white;
-text-decoration: none;
-font-size: 60px;
-transition: all 0.5s ease-out;
-}
-
-.box span span li a:hover {
-color: #0077B5;
-}
+    animation: fadeIn 2s;
+    margin: 0px;
+    padding: 0;
+    }
+    .box li{
+    animation: fadeIn 2s;
+    display: inline-block;
+    list-style:none;
+    }
+    .box li a {
+    animation: fadeIn 2s;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all 0.5s ease-out;
+    }
+    
+    .plane .text{
+        font-size:20px;
+        color:transparent;
+        width:0;
+        text-align: center;
+        white-space: nowrap;
+        margin: auto;
+        transition: all 0.5s ease-out;
+    }
+    .plane:hover .text{
+        text-align: center;
+        color:white;
+        margin: auto;
+    }
+    .box span li a {
+    animation: fadeIn 2s;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all 0.5s ease-out;
+    }
+    
+    .box span li a:hover {
+    color: #ff4d4d;
+    
+    }
+    .box li a:hover {
+    color:gray;
+    }
+    .box span span li a {
+    animation: fadeIn 2s;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all 0.5s ease-out;
+    }
+    
+    .box span span li a:hover {
+    color: #0077B5;
+    }
+    .box span span li a {
+        animation: fadeIn 2s;
+        color: white;
+        text-decoration: none;
+        font-size: 60px;
+        transition: all 0.5s ease-out;
+        }
+        
+        .box span span span li a:hover {
+        color: orange;
+        }
 .center {
 position: absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 }
-.box span span span li a {
-
-animation: fadeIn 2s;
-color: white;
-text-decoration: none;
-font-size: 60px;
-transition: all 0.5s ease-out;
-
-}
-
-.box span span span li a:hover {
-color: ;
 
   /* change this to change the size*/
 }
