@@ -586,7 +586,7 @@ textarea:focus {
   font-family: 'Courier New', sans-serif;
 }
 .box-img{
-  background: url(mainimage.jpg);
+  background: url(../images/mainimage.jpg);
   background:cover;
   background-size:100%;
   border-radius: 50%;
@@ -595,7 +595,7 @@ textarea:focus {
   transition: all 0.1s ease-out;
 }
 .box-img:hover { 
-      background: url(wink.jpg);
+      background: url(../images/wink.jpg);
       background:cover;
       background-size:100%;
       border-radius: 50%;

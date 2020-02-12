@@ -585,7 +585,7 @@ top: 100px;
 font-family: 'Courier New', sans-serif;
 }
 .box-img{
-background: url(aboutprofile.jpg);
+background: url(../images/aboutprofile.jpg);
 background:cover;
 background-size:100%;
 width: 250px;
