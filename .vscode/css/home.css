@@ -15,7 +15,7 @@ html, body {
       height: 100px;
 }
 
-}
+
 .fadeOut{
       -webkit-animation-name:fadeOut;
       animation-name:fadeOut; 
@@ -54,7 +54,6 @@ html, body {
             width: 18em;
       }
 }
-
 @media(max-width: 768px) {
       @keyframes typewriter {
             from {
@@ -65,7 +64,6 @@ html, body {
             }
       }
 }
-
 @keyframes blinkTextCussor {
       from {
             border-right-color: rgba(255, 255, 255, 0.75);
@@ -74,8 +72,6 @@ html, body {
             border-right-color: transparent;
       }
 }
-
-/*--------------- navigation --------------- */
 nav {
       width: 100%;
       background: black;
@@ -83,30 +79,28 @@ nav {
       position: fixed;
       z-index: 1;
 }
-
 nav #brand {
+  
       float: left;
       display: block;
       margin-left: 82px;
+      font-size:15px;
       line-height: 80px;
-      font-weight: bold;
+      font-weight: normal;
 }
-
 nav #brand a {
       color: #fff;
       transition: all 0.3s ease-out;
 }
-
 nav #brand a:hover {
       text-decoration: none;
+      color:blue;
 }
-
 nav #menu {
       float: left;
       right: 80px;
       position: fixed;
 }
-
 nav #menu li {
       padding-left: 40px;
       display: inline-block;
@@ -116,25 +110,20 @@ nav #menu li {
       position: relative;
       transition: all 0.3s ease-out;
 }
-
 nav #menu li span {
       font-weight: 700;
 }
-
 nav #menu li a {
       color: #fff;
       transition: all 0.1s ease-out;
       font-size:15px;
+      padding: 5px 25px;
 }
-
 nav #menu li a:hover {
-      background: -webkit-linear-gradient(#99ff66, white);
       text-decoration: none;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size:20px;
+      background-color: white;
+      color:black;
 }
-
 #toggle {
       position: absolute;
       right: 30px;
@@ -598,6 +587,7 @@ textarea:focus {
       background:cover;
       background-size:100%;
       border-radius: 50%;
+      transform: scale(1.1);
       width: 250px;
       height: 250px;
 }

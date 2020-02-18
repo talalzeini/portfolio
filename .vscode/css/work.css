@@ -125,14 +125,14 @@ nav #menu li a {
     color: #fff;
     transition: all 0.1s ease-out;
     font-size:15px;
+    padding: 5px 25px;
 }
 
 nav #menu li a:hover {
-    background: -webkit-linear-gradient(#99ff66, white);
+ 
     text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size:20px;
+    background-color: white;
+    color:black;
 }
 
 #toggle {
