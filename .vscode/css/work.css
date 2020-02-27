@@ -860,12 +860,10 @@ transform:translate(-50%,-50%);
     transform: scale(1);
     transition-duration: var(--menu-speed);
   }
-  
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
     transition:  opacity 0.4s ease 0.4s;
   }
-  
   .menu-wrap .menu {
     position: fixed;
     top: 0;
@@ -877,9 +875,8 @@ transform:translate(-50%,-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-      background: black;
+    background: black;
   }
-  
   .menu-wrap .menu > div {
     background: url(background.jpg) no-repeat;
     background-size: cover;
@@ -894,7 +891,6 @@ transform:translate(-50%,-50%);
     transform: scale(0);
     transition: all 0.4s ease;
   }
-  
   .menu-wrap .menu > div > div {
     text-align: center;
     max-width: 90vw;
@@ -902,19 +898,19 @@ transform:translate(-50%,-50%);
     opacity: 0;
     transition: opacity 0.4s ease;
   }
-  
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
+    font-family: 'Courier New', Courier, monospace;
     color: #fff;
-    font-size: 75px;
+    font-size: 40px;
     padding: 1rem;
   }
-  
   .menu-wrap .menu > div > div > ul > li > a {
     color: white;
     text-decoration: none;
     transition: color 0.4s ease;
   }
   .menu-wrap .menu > div > div > ul > li > a:hover {
-    color: gray;
+    color: green;
+
   }
