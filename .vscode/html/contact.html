@@ -31,7 +31,7 @@
     <div class=" animated slideInLeft wrapper">
     <!--------------- Bar Start --------------->
     <nav>
-      <span id="brand">Talal Zeini</span>
+      <span id="brand" style="font-weight: 300;">Talal Zeini</span>
           <ul id="menu">
             <li><a href="../html/home.html">Home</a></li>
             <li><a href="../html/about.html">About</a></li>
@@ -187,34 +187,6 @@
               bottom:0;
           }
 </style>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <script type="text/javascript">
-      $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-      $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-      $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-      TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut
-      })
-      TweenMax.staggerFrom("#menu li a", 1, {
-            delay: 0.4,
-            opacity: 0,
-            ease: Expo.easeInOut
-      }, 0.1);
-      new WOW().init();
-      </script>
+     
 </body>
 </html>
