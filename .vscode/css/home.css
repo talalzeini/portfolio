@@ -108,6 +108,7 @@ nav #menu li a {
       transition: all 0.1s ease-out;
       font-size:15px;
       padding: 5px 25px;
+      border-radius: 30px;
 }
 nav #menu li a:hover {
       text-decoration: none;
@@ -118,10 +119,13 @@ nav #menu li a:hover {
       position: absolute;
       right: 30px;
       top: 20px;
-      font-weight: 300;
       z-index: 2;
-      width: 30px;
-      height: 30px;
+      width:  75px;
+      text-align: center;
+      font-weight: 300;
+      display: block;
+      margin: auto;
+      border-radius: 30px;
       cursor: pointer;
       float: right;
       transition: all 0.1s ease-out;
@@ -130,25 +134,32 @@ nav #menu li a:hover {
 
 }
 #toggle:hover{
-      color:#99ff66;
-      font-size:20px;
+      background-color: white;
+      color:black;
 }
 
 .close-btn {
+      display: block;
+      margin: auto;
       position: absolute;
-      right: 16px;
+      right: 30px;
+      top: 20px;
+      width:  75px;
+      text-align: center;
       font-weight: 300;
-      z-index: 2;
+      color:white;
       cursor: pointer;
-      top: -2px;
-      line-height: 80px;
-      transition: all 0.5s ease-out;
+      border-radius: 30px;
+      float: right;
+
 }
 .close-btn:hover{
-     color:#99ff66;  
+    background-color: white;
+    color:black;
 }
 
 #resize {
+
       z-index: 1;
       top: 0px;
       position: fixed;
@@ -161,6 +172,7 @@ nav #menu li a:hover {
 }
 
 #resize #menu {
+
       height: 90px;
       position: absolute;
       left: 45%;
@@ -574,21 +586,21 @@ textarea:focus {
   font-weight: 100;
 }
 .box h2 a{
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 100;
-  color:white;
-  text-decoration: none;
+      max-width: 50%;
+      outline:none;
+      width:500px;
+      margin: auto;
+      border-color: transparent;
+      padding:5px 25px;
+      color:white;
+      border-radius:30px;
+      font-size: 25px;
+      letter-spacing: 3px;
 }
 .box h2 a:hover{
-  background: -webkit-linear-gradient(#99ff66, white);
-  text-decoration: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 30px;
-  letter-spacing: 3px;
-  font-weight: 100;
-  color:red;
+
+  color:black;
+  background: white;
   text-decoration: none;
 }
 .box p{
@@ -827,88 +839,3 @@ animation: 3s fadeRight;
 
 
 
-a {
-	text-decoration: none;
-}
-td {
-	line-height   : 35px;
-      vertical-align: middle;
-      text-decoration: none;
-}
-.aButton {
-	transition        : 1.0s ease all;
-	-moz-transition   : 1.0s ease all;
-	-webkit-transition: 1.0s ease all;
-      font-size: 25px;
-      letter-spacing: 3px;
-      font-weight: 100;
-      color:white;
-      text-decoration: none;
-      
-      width:40%;
-      display: block;
-      margin: auto;
-}
-.aButton:hover {
-	transition        : 1.0s ease all;
-	-moz-transition   : 1.0s ease all;
-	-webkit-transition: 1.0s ease all;
-      font-size: 25px;
-      letter-spacing: 3px;
-      font-weight: 100;
-      color:gray;
-      text-decoration: none;
-}
-
-
-.rotate {
-      cursor: pointer;	
-      text-decoration: none;
-}
-.rotate:hover {
-	transform               : rotate(360deg);
-	-moz-transform          : rotate(360deg);
-	-webkit-transform       : rotate(360deg);
-	transform-origin        : center;
-	-moz-transform-origin   : center;
-      -webkit-transform-origin: center;
-      text-decoration: none;
-
-	transition              : transform 1.0s ease all;
-	-moz-transition         : -moz-transform 1.0s ease all;
-	-webkit-transition      : -webkit-transform 1.0s ease all;
-}
-.rotateY {
-      cursor: pointer;	
-      text-decoration: none;
-}
-.rotateY:hover {
-	transform               : rotateY(360deg);
-	-moz-transform          : rotateY(360deg);
-	-webkit-transform       : rotateY(360deg);
-	transform-origin        : center;
-	-moz-transform-origin   : center;
-      -webkit-transform-origin: center;
-      text-decoration: none;
-
-	transition              : transform 1.0s ease all;
-	-moz-transition         : -moz-transform 1.0s ease all;
-	-webkit-transition      : -webkit-transform 1.0s ease all;
-}
-.rotateX {
-      cursor: pointer;	
-      text-decoration: none;
-}
-.rotateX:hover {
-	transform               : rotateX(360deg);
-	-moz-transform          : rotateX(360deg);
-	-webkit-transform       : rotateX(360deg);
-	transform-origin        : center;
-	-moz-transform-origin   : center;
-      -webkit-transform-origin: center;
-      text-decoration: none;
-
-	transition              : transform 1.0s ease all;
-	-moz-transition         : -moz-transform 1.0s ease all;
-	-webkit-transition      : -webkit-transform 1.0s ease all;
-}

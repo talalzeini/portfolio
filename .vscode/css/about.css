@@ -126,6 +126,7 @@ nav #menu li a {
     transition: all 0.1s ease-out;
     font-size:15px;
     padding: 5px 25px;
+    border-radius: 30px;
 }
 
 nav #menu li a:hover {
@@ -133,6 +134,7 @@ nav #menu li a:hover {
     text-decoration: none;
     background-color: white;
     color:black;
+
 }
 
 #toggle {
