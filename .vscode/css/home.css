@@ -591,11 +591,12 @@ textarea:focus {
       width:500px;
       margin: auto;
       border-color: transparent;
-      padding:5px 25px;
+      padding:15px 25px;
       color:white;
       border-radius:30px;
       font-size: 25px;
       letter-spacing: 3px;
+      transition: all 0.5s ease-out;
 }
 .box h2 a:hover{
 
