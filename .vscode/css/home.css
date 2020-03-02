@@ -70,7 +70,6 @@ nav {
       z-index: 1;
 }
 nav #brand {
-  
       float: left;
       display: block;
       margin-left: 82px;
@@ -78,13 +77,33 @@ nav #brand {
       line-height: 80px;
       font-weight: normal;
 }
+.content:before {
+      content: 'Talal Zeini';
+      left: 80px;
+      position: fixed;
+      color:white;
+      float: left;
+      display: block;
+      font-size:15px;
+      line-height: 80px;
+      font-weight: normal;
+    
+      
+  }
+  .content:hover:before {
+      content: 'Talal Ghassan Zeini';   
+      color:white;
+  }
+  
+  
 nav #brand a {
-      color: #fff;
+      
+      color: RED;
       transition: all 0.3s ease-out;
 }
 nav #brand a:hover {
       text-decoration: none;
-      color:blue;
+     
 }
 nav #menu {
       float: left;
@@ -561,6 +580,8 @@ textarea:focus {
   background-size:100%;
   border-radius: 50%;
   width: 250px;
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
   height: 250px;
   transition: all 0.1s ease-out;
 }
@@ -569,7 +590,6 @@ textarea:focus {
       background:cover;
       background-size:100%;
       border-radius: 50%;
-      transform: scale(1.1);
       width: 250px;
       height: 250px;
 }
@@ -596,7 +616,7 @@ textarea:focus {
       border-radius:30px;
       font-size: 25px;
       letter-spacing: 3px;
-      transition: all 0.5s ease-out;
+      transition: all 1.5s ease-out;
 }
 .box h2 a:hover{
 
@@ -624,7 +644,7 @@ ul{
   color: white;
   text-decoration: none;
   font-size: 60px;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .box span li a {
 
@@ -838,5 +858,27 @@ animation: 3s fadeRight;
 
 
 
+
+
+
+
+
+
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 
 

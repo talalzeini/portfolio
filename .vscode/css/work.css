@@ -128,6 +128,24 @@ nav #menu li a {
     padding: 5px 25px;
     border-radius: 30px;
 }
+.content:before {
+    content: 'Talal Zeini';
+    left: 80px;
+    position: fixed;
+    color:white;
+    float: left;
+    display: block;
+    font-size:15px;
+    line-height: 80px;
+    font-weight: normal;
+  
+    
+}
+.content:hover:before {
+    content: 'Talal Ghassan Zeini';   
+    color:white;
+}
+
 
 nav #menu li a:hover {
  
@@ -592,10 +610,12 @@ background-size:100%;
 width: 250px;
 height: 250px;
 border-radius: 50%;
-transition: all 0.1s ease-out;
+transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  transition: all 0.1s ease-out;
+
 }
 .box-img:hover { 
-    transform:scale(1.25);
     background:cover;
     background-size:100%;
     border-radius: 50%;
@@ -922,7 +942,25 @@ transform:translate(-50%,-50%);
 
   }
 
-  .hide{
-      display:none;
-      
-  }
+  
+
+
+
+
+
+
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
