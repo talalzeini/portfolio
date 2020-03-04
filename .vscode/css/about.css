@@ -690,6 +690,7 @@ ul{
         color:white;
         margin: auto;
     }
+   
     .box span li a {
     animation: fadeIn 2s;
     color: white;
@@ -735,7 +736,7 @@ transform:translate(-50%,-50%);
 }
 
   /* change this to change the size*/
-}
+
 .main {
     animation: fadeIn 2s;
     max-width: 1500px;
