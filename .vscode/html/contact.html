@@ -11,6 +11,7 @@
                   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
                   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
                   <script src="contact.js"></script>
+                  <script src="messageme.js"></script>
                                                             <title>Contact Me</title>
 
                   <link rel="stylesheet" href="../css/contact.css">
@@ -73,20 +74,23 @@
     <p id ="p2" class= "number" style="color:black;">+1 408 (818) 0894
     <!-- <button onclick="copyToClipboard('#p2')"><i class="fas fa-copy"></i></button> -->
 </p>
-    <div class="contact-us">
-      <div class="title">
+<button onclick="StartGame()" id ="four" class= "num" style="color:black;">Message Me
+      <!-- <button onclick="copyToClipboard('#p2')"><i class="fas fa-copy"></i></button> -->
+</button>
+    <div class="contact-us hide" id="one">
+      <div class="title ">
       
       </div>
 
 <form  action="https://formspree.io/talalzeini@gmail.com" method="POST">
-  <div class="form-items">
+  <div class="form-items hide" id="two">
 <label for="email">
 <input type="email" name="email" class="email" placeholder="Email"/>
 
 
 </label>
 </div>
-<div class="form-items">
+<div class="form-items hide" id="three">
 <label>
 <input type="text" name="subject" class="subject" placeholder="Subject"/>
 </label>
@@ -189,6 +193,5 @@
               bottom:0;
           }
 </style>
-     
 </body>
 </html>

@@ -87,7 +87,6 @@ nav #brand {
       font-size:15px;
       line-height: 80px;
       font-weight: normal;
-    
       
   }
   .content:hover:before {
@@ -613,14 +612,16 @@ textarea:focus {
       border-color: transparent;
       padding:15px 25px;
       color:white;
-      border-radius:30px;
-      font-size: 25px;
       letter-spacing: 3px;
-      transition: all 1.5s ease-out;
+      font-size: 25px;
+      
+      transition: all 0.5s ease-out;
 }
 .box h2 a:hover{
 
+  border-radius:30px;
   color:black;
+  letter-spacing: 6px;
   background: white;
   text-decoration: none;
 }

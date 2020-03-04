@@ -616,7 +616,7 @@ transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
 .box-img:hover { 
-    transform:scale(1.25);
+
     background:cover;
     background-size:100%;
     border-radius: 50%;
