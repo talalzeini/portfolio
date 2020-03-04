@@ -519,7 +519,7 @@ margin: auto;
 background: rgba(255, 255, 255, 0.1);
 color: white;
 position: relative;
-height:900px;
+height:700px;
 top: 100px;
 border-radius: 30px;
 border-color: transparent;
@@ -831,6 +831,30 @@ transform:translate(-50%,-50%);
     outline: none;
     border-radius: 30px;
 }
+.num {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
+}
+.num:hover {
+    width: 100%;
+    transform: scale(1.1);
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+}
+
 
 
 .submit{
@@ -894,3 +918,10 @@ transition: all 0.2s ease-out;
 	}
 }
 
+
+
+
+
+.hide{
+    display:none;
+}
