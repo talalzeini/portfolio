@@ -83,6 +83,7 @@ nav {
     height: 80px;
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 
 nav #brand {
@@ -519,7 +520,7 @@ margin: auto;
 background: rgba(255, 255, 255, 0.1);
 color: white;
 position: relative;
-height:700px;
+height:900px;
 top: 100px;
 border-radius: 30px;
 border-color: transparent;
@@ -656,7 +657,7 @@ transform:translate(-50%,-50%);
 }
 
   /* change this to change the size*/
-}
+
 .main {
     animation: fadeIn 2s;
     max-width: 1500px;
