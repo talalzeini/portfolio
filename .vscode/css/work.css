@@ -375,6 +375,7 @@ h6 {
 }
 
 #media ul li {
+animation: float 6s ease-in-out infinite;
 display: inline-block;
 position: relative;
 width:50px;

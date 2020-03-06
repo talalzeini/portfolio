@@ -370,100 +370,92 @@ h6 {
 
 
 
-
 #media ul {
     list-style: none;
-}
-
-#media ul li {
-display: inline-block;
-position: relative;
-width:50px;
-padding:10%;
-}
-#media ul li a{
+ }
+ #media ul li {
+       animation: float 6s ease-in-out infinite;
+    display: inline-block;
+    position: relative;
+    width:50px;
+    padding:10%;
+ }
+ #media ul li a{
     font-size: 50px;
     color: white;
-  transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
     transition: font-size 0.1s ease-out;
-}
-#media ul li a:hover{
-    font-size:60px;
+ }
+ #media ul li a:hover{
     color:gray;
     width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    text-decoration: none;
+ }
+ #media ul span li a{
+    font-size: 50px;
+    color: white;
+    transition: color 0.5s ease-out;
+    transition: font-size 0.1s ease-out;
+ }
+ #media ul span li a:hover{
+    color: #38A1F3;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    text-decoration: none;
+ }
+ #media ul span span li a{
+    font-size: 50px;
+    color: white;
+    transition: color 0.5s ease-out;
+    transition: font-size 0.1s ease-out;
+ }
+ #media ul span span li a:hover{
+    color: #0e76a8;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    text-decoration: none;
+ }
+ #media ul span span span li a{
+       font-size: 50px;
+       color: white;
+       transition: color 0.5s ease-out;
+       transition: font-size 0.1s ease-out;    
+ }
+ #media ul span span span li a:hover{
+     
+       border-radius: 40%;
+       height:42px;
+       color:white;
+       text-decoration: none;
+       width: 42px;
        display: flex;
        align-items: center;
        justify-content: center;
-       height:50px;
-       text-decoration: none;
-}
-#media ul span li a{
-font-size: 50px;
- color: white;
-transition: color 0.5s ease-out;
- transition: font-size 0.1s ease-out;
-}
-#media ul span li a:hover{
- color: #38A1F3;
- font-size:60px;
- width: 50px;
- display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    text-decoration: none;
-
-}
-#media ul span span li a{
-    font-size: 50px;
-    color: white;
-  transition: color 0.5s ease-out;
-    transition: font-size 0.1s ease-out;
-}
-#media ul span span li a:hover{
- color: #0e76a8;
- font-size:60px;
- width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    text-decoration: none;
-
-}
-#media ul span span span li a{
-    font-size: 50px;
-    color: white;
-  transition: color 0.5s ease-out;
-    transition: font-size 0.1s ease-out;
-
-    
-}
-#media ul span span span li a:hover{
-    font-size:60px;
-    border-radius: 40%;
-    height:50px;
-    color:white;
-    text-decoration: none;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent; 
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 90%); 
-
-}
-
-@media(max-width: 768px) {
-    .collab, #personal, #media, #address {
-          text-align: center;
-    }
-
-    .info ul {
-          margin: 0 0 0 -22px;
-          padding: 0;
-    }
-}
+       background: transparent; 
+       background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 90%); 
+ }
+ 
+ 
+ @media(max-width: 768px) {
+       .collab, #personal, #media, #address {
+             text-align: center;
+       }
+ 
+       .info ul {
+             margin: 0 0 0 -22px;
+             padding: 0;
+       }
+ }
 
 /*--------------- work page --------------- */
 

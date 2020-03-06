@@ -1,8 +1,4 @@
-html {
-  
 
-  z-index:2;
-}
 body{
   height: 10px;
   z-index:2;
@@ -78,6 +74,6 @@ body{
 }
 
 .st{
-  z-index:15500;
+  
   position:relative;
 }

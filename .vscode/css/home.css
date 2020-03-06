@@ -6,6 +6,8 @@ html, body {
       font-family: "Roboto Mono" !important;
       background: black !important;
       color: #fff !important;
+      
+      
 }
 .whitespace {
       width: 100%;
@@ -353,10 +355,12 @@ height: 1px;
    font-size: 18px;
    padding-left: 20px;
 }
+
 #media ul {
    list-style: none;
 }
 #media ul li {
+      animation: float 6s ease-in-out infinite;
    display: inline-block;
    position: relative;
    width:50px;
@@ -582,7 +586,7 @@ textarea:focus {
   border-radius: 50%;
   width: 250px;
   transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
   height: 250px;
   transition: all 0.1s ease-out;
 }
@@ -595,18 +599,19 @@ textarea:focus {
       height: 250px;
 }
 .box h1{
-
+  
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
 }
 .box h5{
-
+    
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 100;
 }
 .box h2 a{
+    
       max-width: 50%;
       outline:none;
       width:500px;
@@ -637,7 +642,7 @@ ul{
   padding: 0;
 }
 .box li{
-
+      
   display: inline-block;
   margin: 6px;
   list-style:none;
