@@ -29,7 +29,22 @@ if(email.length > 5 && email.includes('@') && email.includes('.')){
 
 })
 
-
-
-
 })
+
+
+
+
+function Start(){
+   const once = document.getElementById('one');
+const twice = document.getElementById('two');
+const third = document.getElementById('three');
+const four = document.getElementById('four');
+
+   console.log("hey");
+   once.classList.remove('hide');
+   twice.classList.remove('hide');
+   third.classList.remove('hide');
+   four.classList.add('hide');
+ 
+    
+}

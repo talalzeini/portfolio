@@ -10,8 +10,9 @@
                   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
                   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
                   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-                  <script src="contact.js"></script>
-                  <script src="messageme.js"></script>
+                  <script src="../js/contact.js" type="text/javascript"></script>
+             
+                  
                                                             <title>Contact Me</title>
 
                   <link rel="stylesheet" href="../css/contact.css">
@@ -62,7 +63,7 @@
 
 
 
-                 <div class= "box wow fadeInUpBig">
+                 <div class= "box">
          
     
     <img class= "box-img">
@@ -74,10 +75,9 @@
     <p id ="p2" class= "number" style="color:black;">+1 408 (818) 0894
     <!-- <button onclick="copyToClipboard('#p2')"><i class="fas fa-copy"></i></button> -->
 </p>
- <!--<button onclick="StartGame()" id ="four" class= "num" style="color:black;">Message Me
-      <button onclick="copyToClipboard('#p2')"><i class="fas fa-copy"></i></button> -->
-</button>
-    <div class="contact-us" id="one">
+<button onclick="Start()" class="num" id="four" style="color:black;">Message Me</button>
+ 
+    <div class="contact-us hide" id="one">
       <div class="title">
            
       </div>
@@ -85,30 +85,30 @@
 <form  action="https://formspree.io/talalzeini@gmail.com" method="POST">
 
 
-<div class="form-items" id="two">
+<div class="form-items hide" id="two">
 
 <label for="email">
-<input type="email" name="email" class="email" placeholder="Email"/>
+<input type="email" name="email" class="email fadeLeft" placeholder="Email"/>
 </label>
 </div>
 
 
-<div class="form-items " id="three">
+<div class="form-items hide" id="three">
 <label>
-<input type="text" name="subject" class="subject" placeholder="Subject"/>
+<input type="text" name="subject" class="subject fadeRight" placeholder="Subject"/>
 </label>
 </div>
 
 
 <div class="form-items">
 <label>
-<textarea class="message" name="message" placeholder="Message..."></textarea>
+<textarea class="message fadeLeft" name="message" placeholder="Message..."></textarea>
 </label>
 </div>
 
 
 <div class="status"></div>
-<button type="submit" class="submit">Submit <!--<i class="fas fa-arrow-right"></i> --></button>
+<button type="submit" class="submit fadeRight">Submit <!--<i class="fas fa-arrow-right"></i> --></button>
 </form> 
 <div class="row"></div>
 </div>
