@@ -18,7 +18,7 @@
                     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
              
 </head>
-<body id="overs">
+<body class="" id="over">
     <section>
 
 
@@ -55,10 +55,10 @@
       </div>
 <div class="menu-wrap">
       
-      <input type="checkbox" class="toggler">
+      <input id="this" type="checkbox" class="toggler" onclick="on()">
       <div class="hamburger" ><div></div></div>
   
-      <div class="menu hide overflow">
+      <div class="menu">
         <div>
           <div>
             <ul>
@@ -78,7 +78,7 @@
     
     
 
-<div class= "box wow fadeInUpBig">
+<div class= "box">
    
       <img  alt="" class="box-img">
 
@@ -381,6 +381,23 @@
                 bottom:0;
             }
   </style>
+<script>
+      const hey = document.getElementById('over');
+      function on()
+      {
+            hey.classList.add('overflow');
+            //document.getElementById('this').removeAttribute("onclick");
+            document.getElementById('this').setAttribute('onclick', 'off()');
+      }
+      function off()
+      {
+            hey.classList.remove('overflow');
+            document.getElementById('this').setAttribute('onclick', 'on()');
+
+      }
+     
+
+</script>
 
     
   </body>

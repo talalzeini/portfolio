@@ -793,12 +793,14 @@ transform:translate(-50%,-50%);
   .content {
     background-color: white;
     padding: 10px;
+
   }
   .menu-wrap {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+ 
   
   }
   
@@ -891,7 +893,6 @@ transform:translate(-50%,-50%);
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -899,13 +900,14 @@ transform:translate(-50%,-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: black center;
   }
   .menu-wrap .menu > div {
     background: url(background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     border-radius: 50%;
+    overflow: hidden;
     width: 200vw;
     height: 200vw;
     display: flex;
