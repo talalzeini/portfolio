@@ -1022,22 +1022,27 @@ transform:translate(-50%,-50%);
 }
 #properties-slider .property-details{
     padding:1rem;
+    text-align: center;
 }
 #properties-slider .price{
     font-size:1.2rem;
-    color:#343a40;
-    font-weight:800;
+    color:white;
+    font-weight:300;
+    text-align: center;
     margin: 0 0 0.5rem 0;
 }
 #properties-slider .property-details span{
     font-size:0.8rem;
     padding-right: 15px;
+    text-align: center;
 }
 #properties-slider .property-details span.baths{
     padding-left: 10px;
+    text-align: center;
 }
 #properties-slider .property-details span.sqft{
     padding-right: 0px;
+    text-align: center;
     padding-left: 10px;
 }
 #properties-slider .property-details span.baths,
@@ -1046,12 +1051,46 @@ transform:translate(-50%,-50%);
 }
 #properties-slider .property-details address{
     font-size:0.8rem;
+    text-align: center;
     font-style: normal;
     margin-top: 0.5rem;
 }
 #properties button.rounded{
     display: block;
     margin:2rem auto 0;
-    width: 350px;
+    width: 400px;
+    background-color: white;
+    border-radius: 50px;
 }
 /* properties styles end */
+.demo{
+background-color: white;
+ color:black; 
+ border-radius: 30px;
+  border:none; 
+  padding: 5px 25px;
+  width:100px;
+    margin:1.5rem auto 0;
+    text-decoration: none;
+     display: block;
+     font-size:15px;
+}
+.demo:hover{
+    background-color: white;
+
+     transition: all 0.1s ease-out;
+     color:black; 
+      border:none; 
+      width:100px;
+      text-decoration: none;
+      margin:1.5rem auto 0;
+      display: block;
+
+    } 
+    .service{
+     color:white;
+            font-size:0.8rem;
+ 
+            text-align: center;
+        
+    }
