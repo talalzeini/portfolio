@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
     height: 100%;
     font-family: "Roboto Mono" !important;
     background: black !important;
@@ -14,14 +15,7 @@ html, body {
     width: 100%;
     height: 100px;
 }
-@keyframes fadeIn{
-from{
-  opacity: 0;
-}
-to{
-  opacity: 1;
-}
-}
+
 
 @media(max-width: 768px) {
     .whitespace {
@@ -592,7 +586,7 @@ textarea:focus {
     text-align: right;
 }
 .box {
-animation: fadeIn 2s;
+
 width: 450px;
 background-size:100%;
 padding: 40px;
@@ -625,19 +619,19 @@ transform: translatey(0px);
     height: 250px;
 }
 .box h1{
-animation: fadeIn 2s;
+
 font-size: 50px;
 letter-spacing: 4px;
 font-weight: 100;
 }
 .box h5{
-animation: fadeIn 2s;
+
 font-size: 70px;
 letter-spacing: 3px;
 font-weight: 100;
 }
 .box h2 a{
-animation: fadeIn 2s;
+
 font-size: 25px;
 letter-spacing: 3px;
 font-weight: 100;
@@ -656,21 +650,21 @@ color:red;
 text-decoration: none;
 }
 .box p{
-animation: fadeIn 2s;
+
 text-align: center;
 }
 ul{
-animation: fadeIn 2s;
+
 margin: 0px;
 padding: 0;
 }
 .box li{
-animation: fadeIn 2s;
+
 display: inline-block;
 list-style:none;
 }
 .box li a {
-animation: fadeIn 2s;
+
 color: white;
 text-decoration: none;
 font-size: 60px;
@@ -692,7 +686,7 @@ transition: all 0.5s ease-out;
     margin: auto;
 }
 .box span li a {
-animation: fadeIn 2s;
+
 color: white;
 text-decoration: none;
 font-size: 60px;
@@ -707,7 +701,7 @@ color: #ff4d4d;
 color:gray;
 }
 .box span span li a {
-animation: fadeIn 2s;
+
 color: white;
 text-decoration: none;
 font-size: 60px;
@@ -718,7 +712,7 @@ transition: all 0.5s ease-out;
 color: #0077B5;
 }
 .box span span li a {
-    animation: fadeIn 2s;
+  
     color: white;
     text-decoration: none;
     font-size: 60px;
@@ -736,20 +730,13 @@ left:50%;
 transform:translate(-50%,-50%);
 }
   /* change this to change the size*/
-}
+
 .main {
-    animation: fadeIn 2s;
+
     max-width: 1500px;
     margin: auto;
   }
-  @keyframes fadeIn{
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-  }
+ 
   * {
     box-sizing: border-box;
   }
