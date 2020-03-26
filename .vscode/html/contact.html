@@ -16,7 +16,9 @@
                                                             <title>Contact Me</title>
 
                   <link rel="stylesheet" href="../css/contact.css">
-                  <link rel="stylesheet" href="../css/bg.css">
+                  <link rel="stylesheet" href="../css/animate.css">   
+                  <script src="../js/wow.min.js" type="text/javascript"></script>
+                  <script src="../js/t.min.js" type="text/javascript"></script> 
                   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
                   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
                   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -41,18 +43,30 @@
             <li><a href="../html/work.html">Projects</a></li>
             <li><a  style="background-color: white; color:black">Contact</a></li>
           </ul>
-                <div id="toggle"><div class="span">Menu</div>
+                
 </div>
     </nav>
-   
-    <div id="resize">
-          <div class="close-btn">Close</div>
-          <ul id="menu">
-            <li><a href="../html/home.html">Home</a></li>
-            <li><a href="../html/about.html">About</a></li>
-            <li><a href="../html/work.html">Projects</a></li>
-            <li><a href="../html/contact.html">Contact</a></li>
-          </ul>
+    <div id="toggle">
+    <div class="menu-wrap">
+
+      <input id="this" type="checkbox" class="toggler" onclick="on()">
+      <div class="hamburger" ><div></div></div>
+
+      <div class="menu">
+      <div>
+      <div>
+            <ul>
+                  <li><a href="../html/home.html" style="letter-spacing: 5px;">Home</a></li>
+                  <li><a  href="../html/about.html" style="letter-spacing: 5px;">About</a></li>
+                  <li><a  href="../html/work.html" style="letter-spacing: 5px;">Projects</a></li>
+                  <li><a class="active" href="#" style="letter-spacing: 5px;" >Contact</a></li>
+            </ul>
+            
+      </div>
+      </div>
+      </div>
+      
+</div>
     </div>
             <!--------------- Bar End --------------->
            
@@ -63,19 +77,19 @@
 
 
 
-                 <div class= "box">
+                 <div class= "box wow tada" >
          
     
     <img class= "box-img">
-    <h5 style="text-align: center;">Contact</h5>
+    <h5 style="text-align: center;" class="wow fadeInLeftBig">Contact</h5>
      
-    <p  id="p1" class= "number" style="color:black;">talalzeini@gmail.com
+    <p  id="p1" class= "number wow fadeInRightBig" style="color:black;">talalzeini@gmail.com
    <!-- <button onclick="copyToClipboard('#p1')"></button> -->
 </p>
-    <p id ="p2" class= "number" style="color:black;">+1 408 (818) 0894
+    <p id ="p2" class= "number wow fadeInLeftBig" style="color:black;">+1 408 (818) 0894
     <!-- <button onclick="copyToClipboard('#p2')"><i class="fas fa-copy"></i></button> -->
 </p>
-<button onclick="Start()" class="num" id="four" style="color:black;">Message Me</button>
+<button onclick="Start()" class="num wow fadeInRightBig" id="four" style="color:black;">Message Me</button>
  
     <div class="contact-us hide" id="one">
       <div class="title">
@@ -240,5 +254,8 @@
               bottom:0;
           }
 </style>
+<script type="text/javascript">
+  new WOW().init();
+</script> 
 </body>
 </html>
