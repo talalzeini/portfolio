@@ -8,6 +8,7 @@ html, body {
     font-family: "Roboto Mono" !important;
     background: black !important;
     color: #fff !important;
+    overflow-x: hidden;
 }
 
 .whitespace {
@@ -55,7 +56,7 @@ html, body {
                 width: 0;
           }
           to {
-                width: 17em;
+                width: 13em;
           }
     }
 }
