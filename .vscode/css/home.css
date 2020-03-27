@@ -8,6 +8,23 @@ html, body {
       color: #fff !important;    
 }
 
+footer {
+      position: relative;
+      height: 0px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  p.copyright {
+      position: absolute;
+      width: 100%;
+      color: #fff;
+      line-height: 100px;
+      font-size: 20px;
+      text-align: center;
+      bottom:0;
+  }
 /* Type writer */
 /* Blinking vertical line for typewriter */
 .line {
@@ -62,7 +79,7 @@ html, body {
       font-weight: lighter;
       text-align: center;
       line-height: 58px;
-      font-size: 23px;
+      font-size: 30px;
 }
 /* Type writer */
 
@@ -921,7 +938,7 @@ ul{
 
 /* jahesh */
 
-    @media only screen and (max-width:375px) and (min-width:320px){
+    @media only screen and (max-width:414px) and (min-width:320px){
       html, body {
             margin: 0;
             padding: 0;
@@ -929,7 +946,7 @@ ul{
             height: 100%;
             overflow-x: hidden;
             font-family: "Roboto Mono" !important;
-            background: gray!important;
+            background: black!important;
             color: #fff !important;    
       }
       .wow {
@@ -940,7 +957,27 @@ ul{
                 -ms-animation: none !important;
                     animation: none !important;
           }
-      
+          footer {
+            position: relative;
+            height: 0px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        p.copyright {
+            position: absolute;
+            width: 100%;
+            color: white;
+            line-height: 100px;
+            font-size: 15px;
+            text-align: center;
+            bottom:0;
+        }
+        p.copyright span{
+            font-size:20px;
+            color:white;
+        }
       
       /* Type writer */
       /* Blinking vertical line for typewriter */
@@ -993,7 +1030,8 @@ ul{
       }
       
       .hero h1 {
-            font-weight: lighter;
+            font-weight: 300;
+            font-style: italic;
             text-align: center;
             line-height: 58px;
             font-size: 15px;
@@ -1027,7 +1065,7 @@ ul{
       /* Name appearing */
       .content:before {
             content: 'Talal';
-            left: 15px;
+            left: 18px;
             position: fixed;
             color:white;
             float: left;
@@ -1292,7 +1330,7 @@ ul{
       
       }
       #media ul li a{
-         font-size: 50px;
+         font-size: 40px;
          color: white;
          transition: color 0.5s ease-out;
          border: none;
@@ -1309,7 +1347,7 @@ ul{
          text-decoration: none;
       }
       #media ul span li a{
-         font-size: 50px;
+         font-size: 40px;
          color: white;
          transition: color 0.5s ease-out;
          transition: font-size 0.1s ease-out;
@@ -1325,7 +1363,7 @@ ul{
          text-decoration: none;
       }
       #media ul span span li a{
-         font-size: 50px;
+         font-size: 40px;
         
          color: white;
          transition: color 0.5s ease-out;
@@ -1341,7 +1379,7 @@ ul{
          text-decoration: none;
       }
       #media ul span span span li a{
-            font-size: 50px;
+            font-size: 40px;
             color: white;
             transition: color 0.5s ease-out;
             transition: font-size 0.1s ease-out;    
