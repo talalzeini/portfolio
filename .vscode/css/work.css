@@ -2092,15 +2092,15 @@ transform:translate(-50%,-50%);
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
     padding: 1rem;
   }
   .menu-wrap .menu > div > div > ul > li > a {
     color: white;
     text-decoration: none;
     border: 2px solid white;
-    width:700px;
-    padding: 10px 25px;
+    width:400px;
+    padding: 5px 15px;
     transition: all 1.5s;
   }
   .menu-wrap .menu  .active{
@@ -2108,17 +2108,18 @@ transform:translate(-50%,-50%);
     text-decoration: none;
     border: 2px solid white;
     background-color: white;
-    width:700px;
-    padding: 10px 25px;
+    width:400px;
+    padding: 5px 15px;
     transition: all 0.75s;
   }
   .menu-wrap .menu > div > div > ul > li > a:hover {
    background-color: white;
    color:black;
-   width:700px;
-   padding: 10px 25px;
+   width:400px;
+   padding: 5px 15px;
    transition: all 0.75s;
   }
+
 
 
 
