@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "/Users/talalzeini/Documents/Projects/Portfolio"
+		},
+		{
+			"path": "/Users/talalzeini/Documents/Projects/tip-calculator.zip"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio"
+	}
+}
