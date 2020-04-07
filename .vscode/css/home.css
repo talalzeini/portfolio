@@ -23,6 +23,10 @@ footer {
       text-align: center;
       bottom:0;
   }
+  p.copyright span{
+      font-size:30px;
+      color:white;
+  }
 /* Type writer */
 /* Blinking vertical line for typewriter */
 .line {

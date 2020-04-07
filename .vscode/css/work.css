@@ -32,7 +32,9 @@ p.copyright {
     text-align: center;
     bottom:0;
 }
-
+p.copyright span{
+    font-size:30px;
+}
 
 @media(max-width: 768px) {
     .whitespace {
@@ -2425,4 +2427,60 @@ background-color: white;
 .slick-arrow.slick-hidden {
     display: none;
     outline:none;
+}
+
+
+
+
+
+
+#size{
+	border-radius: 30px;
+	border:none;
+	padding:5px;
+	text-indent: 5px;
+
+}
+
+.range{
+	z-index:1;
+	width:400px;
+	height:18px;
+	background: rgba(128, 255, 170);
+	outline:none;
+	border-radius: 50px;
+	border: yellow;
+	transform: rotate(180deg);
+	overflow: hidden;
+	-webkit-appearance:none;
+	box-shadow: 0 0 0 2px rgba(128, 255, 170), inset 0 0 10px rgba(128, 255, 170);
+
+	/* transform: rotate(270deg); */
+}
+.range::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width:18px;
+	z-index:3;
+	height:18px;
+	border-radius: 50%;
+	background-color: rgba(255, 173, 153);
+	cursor:pointer;
+	border: 4px solid black;
+	box-shadow: -410px 0 0 400px  rgba(255, 173, 153);;
+}
+
+.reset{
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	position: relative;
+	background-color: rgba(255, 173, 153);
+	color:black;
+	font-size: 22px;
+	font-weight:700;
+	transition: all 0.2s ease-out;
+}
+.reset:hover{
+	background: rgba(128, 255, 170);
 }
