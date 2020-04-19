@@ -44,7 +44,9 @@ const four = document.getElementById('four');
    once.classList.remove('hide');
    twice.classList.remove('hide');
    third.classList.remove('hide');
+
    four.classList.add('hide');
+
  
     
 }

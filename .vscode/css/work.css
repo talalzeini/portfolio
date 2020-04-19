@@ -434,14 +434,12 @@ transition: color 0.5s ease-out;
 }
 #media ul span li a:hover{
  color: #38A1F3;
-
  width: 50px;
  display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    text-decoration: none;
-
+ align-items: center;
+ justify-content: center;
+ height:50px;
+ text-decoration: none;
 }
 #media ul span span li a{
     font-size: 50px;
@@ -697,14 +695,50 @@ padding: 0;
 display: inline-block;
 list-style:none;
 }
-.box li a {
-
+.unity a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+}
+.unity a:hover{
+    color: gray;
+    text-decoration: none;
+    font-size: 60px;
+}
+.unity .text{
+    font-size:20px;
+    color:transparent;
+    width:0;
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+}
+.swift a{
 color: white;
 text-decoration: none;
 font-size: 60px;
-
 }
-
+.swift a:hover{
+    color:orange;
+}
+.swift .text{
+    font-size:20px;
+    color:transparent;
+    width:0;
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+}
+.swift:hover .text{
+    text-align: center;
+    color:white;
+    margin: auto;
+}
+.unity:hover .text{
+    text-align: center;
+    color:white;
+    margin: auto;
+}
 .plane .text{
     font-size:20px;
     color:transparent;
@@ -726,13 +760,17 @@ font-size: 60px;
 
 }
 
+.box span span span span li a:hover {
+
+    color: red;
+    text-decoration: none;
+    font-size: 60px;
+}
 .box span li a:hover {
-color: #ff4d4d;
+color: yellow;
 
 }
-.box li a:hover {
-color:gray;
-}
+
 .box span span li a {
 
 color: white;
