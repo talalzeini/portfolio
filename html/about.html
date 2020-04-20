@@ -25,7 +25,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="../css/about.css" type="text/css">
-        <link rel="stylesheet" href="../css/animate.css">   
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">                            
 </head>
@@ -73,20 +74,20 @@
        
 <!-- Box starts here -->
 <div class= "box">
-        <div class="wow fadeInDownBig">
+        <div data-aos="fade-down" data-aos-delay="150">
               <img  alt="" class="box-img image">
         </div>
 <br>
 <br>
 <br>      
-        <h5 class="wow fadeInDownBig" >About</h5>
+        <h5 data-aos="fade-down" data-aos-delay="50">About</h5>
 <br> 
 <!-- About icons starts here -->
 <ul>
      <p>
 <!-- Plane -->
                     <li class="plane">
-                              <a href="#"><i class="fa fa-plane wow fadeInLeftBig" aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-plane" data-aos="fade-right" data-aos-delay="500" aria-hidden="true"></i></a>
                               <div class= "text">
                                             <h3 style="position:relative; left:10px; top:60px">I travel a lot.</h3>
                               </div>
@@ -94,7 +95,7 @@
 <!-- Soccer -->    
               <span><span><span>
                     <li class="plane">
-                              <a href="#"><i class="far fa-futbol wow fadeInLeftBig" aria-hidden="true"></i></a>
+                              <a href="#"><i class="far fa-futbol" data-aos="fade-right" data-aos-delay="250" aria-hidden="true"></i></a>
                               <div class= "text">
                                     <h3 style="position:relative; right:100px; top:60px">Soccer is my passion.</h3>
                               </div>
@@ -103,7 +104,7 @@
 <!-- Target -->    
               <span>
                     <li class="plane">
-                              <a href="#target"><i  class="fas fa-bullseye wow fadeInUpBig" aria-hidden="true"></i></a> 
+                              <a href="#target"><i  class="fas fa-bullseye" data-aos="fade-up" data-aos-delay="100" aria-hidden="true"></i></a> 
                               <div class= "text" > 
                                     <h3 class="target" style="position:relative; right:135px; top:60px;">I work at Target.</h3>
                               </div>
@@ -112,7 +113,7 @@
 <!-- Graduation -->        
               <span><span>
                     <li class="plane"> 
-                              <a href="#college"><i class="fas fa-graduation-cap wow fadeInRightBig" aria-hidden="true"></i></a>
+                              <a href="#college"><i class="fas fa-graduation-cap" data-aos="fade-left" data-aos-delay="250" aria-hidden="true"></i></a>
                               <div class= "text">
                                     <h3 style="position:relative; right:225px; top:60px">Graduating in 2023.</h3>
                               </div>
@@ -120,7 +121,7 @@
               </span></span>
 <!-- Code -->      
                     <li class="plane">
-                              <a class="key" href=""><i class="fas fa-keyboard wow fadeInRightBig" aria-hidden="true"></i></a> 
+                              <a class="key" href=""><i class="fas fa-keyboard" data-aos="fade-left" data-aos-delay="500" aria-hidden="true"></i></a> 
                               <div class= "text">
                                     <h3 style="position:relative; right:270px; top:60px">I code for fun.</h3>
                               </div>
@@ -147,7 +148,7 @@
 <div class="row">
 <!-- Column 1 - C++ -->
                 <div class="column">
-                        <div class="content wow fadeInLeftBig">
+                        <div class="content" data-aos="fade-down-right" data-aos-duration="1000">
                                 <img src="../images/cplusplusimage.jpg" alt="Mountains" style="width:100%">
                                 <h3  style="color:black; text-align: center; font-style:italic;font-weight: bold; ">C++</h3>
                                 <p style="color:black;">I learned this language by taking two courses about it at West Valley College, and I was also able to make several interesting projects on my own using it.</p>
@@ -155,7 +156,7 @@
                 </div>
 <!-- Column 2 - HTML CSS -->
                 <div class="column">
-                        <div class="content wow fadeInDownBig">
+                        <div class="content" data-aos="fade-down" data-aos-duration="1000">
                                 <img src="../images/js.jpg" alt="Lights" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;">HTML CSS JS</a></h3>
                                 <p style="color:black;">Using this made me like web developement because I really like designing. I learned a lot with time until I made some projects on my own like this website.</p>
@@ -163,7 +164,7 @@
                 </div> 
 <!-- Column 3 - C# -->    
                 <div class="column">
-                        <div class="content wow fadeInRightBig">
+                        <div class="content wow" data-aos="fade-down-left" data-aos-duration="1000">
                                 <img src="../images/csharpimage.jpg" alt="Nature" style="width:100%">
                                 <h3 id="college" style="color:black; text-align: center; font-style:italic; font-weight: bold;">C#</h3>
                                 <p style="color:black;">I started learning this language by watching many youtube tutorials until I became more experienced with it and I even managed to make some games on my own.</p>
@@ -176,7 +177,7 @@
 <div class="row">
 <!-- Column 4 - School -->
                 <div class="column">
-                        <div class="content wow fadeInLeftBig">
+                        <div class="content" data-aos="fade-right" data-aos-duration="1000">
                                 <img src="../images/lycee.jpg" alt="Mountains" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic;font-weight: bold;">School</h3>
                                 <p style="color:black;">I went to a French school back in my home country, and I took a lot of different courses and learned many materials until I passed the French Baccalaureat.</p>
@@ -184,15 +185,15 @@
                 </div>
 <!-- Column 5 - Chilhood -->
                 <div class="column">
-                        <div class="content wow tada ">
-                                <img src="../images/leb.jpg" alt="Lights" style="width:100%">
+                        <div class="content wow" data-aos="flip-up" data-aos-duration="1000">
+                                <img src="../images/lebanon.jpg" alt="Lights" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;" >Childhood</h3>
                                 <p style="color:black;">I grew up in Lebanon until I moved to California in August 2019, I wish I could have been a part of the incredible revolution that started there in October.</p>
                         </div>
                 </div> 
 <!-- Column 6 - College -->       
                 <div class="column">
-                        <div class="content wow fadeInRightBig">
+                        <div class="content" data-aos="fade-left" data-aos-duration="1000">
                                 <img src="../images/wvc.jpg" alt="Nature" style="width:100%">
                                 <h3 id="soccer" style="color:black; text-align: center; font-style:italic; font-weight: bold;">College</h3>
                                 <p style="color:black;">I'm currently taking many courses at West Valley College, hoping to transfer to a good university, majoring in Computer Science which I really like studying.</p>
@@ -205,7 +206,7 @@
 <div class="row">
 <!-- Column 7 - Sports -->
                 <div class="column">
-                        <div class="content wow fadeInLeftBig">
+                        <div class="content" data-aos="fade-right" data-aos-duration="1000">
                                 <img src="../images/soccer.jpg" alt="Mountains" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;">Sports</h3>
                                 <p style="color:black;">I always liked practicing sports, specially running. I have a passion for soccer which I played a lot since I was a kid, and I supported Chelsea FC since then.</p>
@@ -213,7 +214,7 @@
                 </div>
 <!-- Column 8 - Languages -->
                 <div class="column">
-                        <div class="content wow fadeInUpBig">
+                        <div class="content" data-aos="flip-down" data-aos-duration="1000">
                                 <img src="../images/languages.jpg" alt="Lights" style="width:100%">
                                 <h3 id="target" style="color:black; text-align: center; font-style:italic; font-weight: bold; font-weight: bold;" >Languages</h3>
                                 <p style="color:black;">Speaking more than one language fuels the brain. Thankfully, I was able to become a trilingual person. More precisely, I can speak Arabic, English and French.</p>
@@ -221,7 +222,7 @@
                 </div>
 <!-- Column 9 - Travel -->  
                 <div class="column">
-                        <div class="content wow fadeInRightBig">
+                        <div class="content" data-aos="fade-left" data-aos-duration="1000">
                                 <img src="../images/fly.jpg" alt="Nature" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;">Travel</h3>
                                 <p style="color:black;">Traveling enhances creativity. Before moving to the United States of America, I had the privilege of taking a trip to Turkey, Portugal, Greece and even Paris.</p>
@@ -234,7 +235,7 @@
 <div class="row">
 <!-- Column 10 - Swift -->
                 <div class="column">
-                        <div class="content wow fadeInLeftBig">
+                        <div class="content" data-aos="fade-right" data-aos-duration="1000">
                                 <img src="../images/swift.jpg" alt="Mountains" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;">Swift</h3>
                                 <p style="color:black;">I don't know much about this language, but I tried and learned how to do several projects using it. Hopefully, more projects with this language are coming soon.</p>
@@ -242,7 +243,7 @@
                 </div>
 <!-- Column 11 - Target -->
                 <div class="column">
-                        <div class="content wow fadeInUpBig">
+                        <div class="content" data-aos="fade-up" data-aos-duration="1000">
                                 <img src="../images/target.jpg" alt="Lights" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;">Work</h3>
                                 <p style="color:black;">I'm currently working hard at Target, in the department of General Merchandise, which helped me gain much experience and become more familiar with the new way of life.</p>
@@ -250,7 +251,7 @@
                 </div>
 <!-- Column 12 - Unity --> 
                 <div class="column">
-                        <div class="content wow fadeInRightBig">
+                        <div class="content" data-aos="fade-left" data-aos-duration="1000">
                                 <img src="../images/unity.jpg" alt="Nature" style="width:100%">
                                 <h3 style="color:black; text-align: center; font-style:italic; font-weight: bold;">Unity</h3>
                                 <p style="color:black;">My first projects were mainly games, and since then I haven't stopped learning new things about Game Developement. I'm working into becoming an expert soon.</p>
@@ -285,7 +286,7 @@
                           <span>
                                 <li id="fb" style="animation-duration: 4s;">
                                       <a href="https://www.instagram.com/talalzeini/">
-                                            <i style="animation-duration: 1.5s;" class="fab fa-instagram wow fadeInLeftBig" aria-hidden="true"></i>
+                                            <i style="animation-duration: 1.5s;" class="fab fa-instagram" data-aos="fade-right" aria-hidden="true"></i>
                                       </a>
                                 </li>
                           </span>
@@ -295,7 +296,7 @@
                     <span>       
                           <li id="yt" style="animation-duration: 4.25s;" >
                                 <a href="https://www.twitter.com/talalzeini/">
-                                      <i style="animation-duration: 1s;" class="fa fa-twitter wow fadeInLeftBig" aria-hidden="true"></i>
+                                      <i style="animation-duration: 1s;" class="fa fa-twitter" data-aos="fade-right" aria-hidden="true"></i>
                                 </a>
                           </li>
                     </span>
@@ -303,7 +304,7 @@
             <!--- Github -->         
                     <li id="ig" style="animation-duration: 4.5s;">
                           <a  href="https://github.com/talalzeini">
-                                <i style="animation-duration: 1s;" class="fa fa-github wow fadeInRightBig" aria-hidden="true"></i>
+                                <i style="animation-duration: 1s;" class="fa fa-github" data-aos="fade-left" aria-hidden="true"></i>
                           </a>
                     </li>
               
@@ -312,7 +313,7 @@
                     <span>
                                 <li id="ig" style="animation-duration: 4.75s;" >
                                       <a href="https://www.linkedin.com/in/talal-zeini-931499193/">
-                                          <i style="animation-duration: 1.5s;" class="fa fa-linkedin-square wow fadeInRightBig" aria-hidden="true"></i>
+                                          <i style="animation-duration: 1.5s;" class="fa fa-linkedin-square" data-aos="fade-left" aria-hidden="true"></i>
                                       </a>
                                 </li>
                     </span>
@@ -333,14 +334,14 @@
 <br>
 <!-- Copyright starts here -->
 <footer>
-  <p style="animation-duration: 3s;" class="copyright wow fadeInRightBig" > <span>&copy;</span> TALAL ZEINI 2020</p>
+  <p style="animation-duration: 3s;" class="copyright" data-aos="fade-left" > <span>&copy;</span> TALAL ZEINI 2020</p>
 </footer>
 <!-- Copyright ends here -->
 
 <!-- Script starts here -->
 <script type="text/javascript">
-new WOW().init();    
-</script>      
+        AOS.init();
+  </script>      
 <!-- Script ends here -->   
 </body>
 </html>
