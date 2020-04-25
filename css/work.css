@@ -10,7 +10,9 @@ html, body {
     background: black !important;
     color: #fff !important;
 }
-
+.hide{
+    display:none;
+}
 .whitespace {
     width: 100%;
     height: 100px;
@@ -1107,15 +1109,18 @@ transform:translate(-50%,-50%);
 }
 #properties-slider .property-details span.baths{
     padding-left: 10px;
+    font-size: 14px;
     text-align: center;
 }
 #properties-slider .property-details span.sqft{
+    font-size: 14px;
     padding-right: 0px;
     text-align: center;
     padding-left: 10px;
 }
 #properties-slider .property-details span.baths,
 #properties-slider .property-details span.beds{
+    font-size: 14px;
     border-right:1px solid #888;
 }
 #properties-slider .property-details address{
@@ -2247,6 +2252,7 @@ transform:translate(-50%,-50%);
     color:white;
     font-weight:300;
     text-align: center;
+    font-size:12px;
     margin: 0 0 0.5rem 0;
 }
 #properties-slider .property-details span{
@@ -2257,15 +2263,18 @@ transform:translate(-50%,-50%);
 #properties-slider .property-details span.baths{
     padding-left: 10px;
     text-align: center;
+    font-size:11px;
 }
 #properties-slider .property-details span.sqft{
     padding-right: 0px;
     text-align: center;
     padding-left: 10px;
+    font-size:11px;
 }
 #properties-slider .property-details span.baths,
 #properties-slider .property-details span.beds{
     border-right:1px solid #888;
+    font-size:11px;
 }
 #properties-slider .property-details address{
     font-size:0.8rem;

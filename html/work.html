@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 <link rel="stylesheet" href="../css/work.css">
 <title>Projects</title>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -114,9 +115,12 @@
                   <img style="border:2px solid white;"  src="../images/blocks.jpg">
                   <div class="property-details">
                       <p class="price" style="letter-spacing: 3px;">BLOCKS</p>
-                      <span style="font-size: 14px;" class="beds">Avoid</span>
-                      <span style="font-size: 14px;"  class="baths">Rectangles</span>
-                      <span  style="font-size: 14px;"  class="sqft">6 Themes</span>
+
+                  <div id="number1">   
+                      <span  class="beds">Avoid</span>
+                      <span   class="baths">Rectangles</span>
+                      <span  class="sqft">6 Themes</span>
+                  </div> 
                       
                    <button class ="demo" onclick="location.href= 'https://github.com/talalzeini/Blocks'">Code</button> 
                   </div>
@@ -127,9 +131,11 @@
                      
                   <div class="property-details">
                         <p class="price" style="letter-spacing: 3px;">366</p>
-                      <span style="font-size: 14px;" class="beds">Hexagon</span>
-                      <span style="font-size: 14px;"  class="baths">360°</span>
-                      <span  style="font-size: 14px;"  class="sqft">6 Sides</span>
+                  <div id="number2"> 
+                      <span  class="beds">Hexagon</span>
+                      <span   class="baths">360°</span>
+                      <span    class="sqft">6 Sides</span>
+                  </div> 
                  <button class ="demo" onclick="location.href= 'https://github.com/talalzeini/hexagon-game'">Code</button> 
                   </div>
               </div>
@@ -138,10 +144,11 @@
                   <img style="border:2px solid white;"  src="../images/xo.jpg">
                   <div class="property-details">
                         <p class="price" style="letter-spacing: 3px;">XO</p>
+                        <div id="number3">
                         <span style="font-size: 14px;  text-align: center;" class="beds">Tic</span>
-                        <span style="font-size: 14px;"  class="baths">Tac</span>
-                        <span  style="font-size: 14px;"  class="sqft">Toe</span>
-                         
+                        <span   class="baths">Tac</span>
+                        <span    class="sqft">Toe</span>
+                  </div>
                       <button class ="demo" onclick="location.href= 'https://github.com/talalzeini/xo-game'">Code</button> 
                   </div>
               </div>
@@ -150,9 +157,11 @@
                      
                   <div class="property-details">
                         <p class="price" style="letter-spacing: 3px;">PARK OUT</p>
-                        <span style="font-size: 14px;" class="beds">Parking</span>
-                        <span style="font-size: 14px;"  class="baths">Cars</span>
-                        <span  style="font-size: 14px;"  class="sqft">Street</span>
+                        <div id="number4">
+                        <span  class="beds">Parking</span>
+                        <span   class="baths">Cars</span>
+                        <span    class="sqft">Street</span>
+                        </div>
                     <button class ="demo" onclick="location.href= 'https://github.com/talalzeini/park-out'">Code</button> 
                   </div>
               </div>
@@ -172,13 +181,15 @@
       <div class="container">
           <div id="properties-slider" class="slicked">
  <div>
-    <img style="border-radius: 50px; " src="../images/quizs.png" >
+    <img style="border-radius: 10px; " src="../images/quizs.png" >
       <div class="property-details">
           <p class="price" style="letter-spacing: 3px;">Math Quiz</p>
+          <div id=number9>
           <span class="beds">Addition</span>
           <span class="baths">Difference</span>
           <span class="beds">Product</span>
           <span class="sqft">Division</span>
+      </div>
            
 
           <button onclick="window.location.href = 'https://talalzeini.github.io/quiz-js'" class="demo">Demo
@@ -192,14 +203,15 @@
 
 
   <div>
-      
       <img  src="../images/sorting.png" >
       <div class="property-details">
         <p class="price" style="letter-spacing: 3px;">Sorting Visualizer</p>
-        <span  class="beds" style="font-size: 14px;" >Algorithms</span>
-        <span class="baths" style="font-size: 14px;" >Arrays</span>
-        <span class="beds" style="font-size: 14px;" >JavaScript</span>
-        <span  class="sqft" style="font-size: 14px;" >Stopwatch</span>
+        <div id=number8>
+        <span  class="beds"  >Algorithms</span>
+        <span class="baths"  >Arrays</span>
+        <span class="beds"  >JavaScript</span>
+        <span  class="sqft"  >Stopwatch</span>
+        </div>
          
     
         <button onclick="window.location.href = 'https://talalzeini.github.io/sorting-visualizer/'" class="demo">Demo
@@ -208,7 +220,7 @@
     
     
       
-    </div>
+      </div>
     </div>
 
 
@@ -216,13 +228,15 @@
  
 
     <div>
-      <img style="border-radius: 50px;" src="../images/properties.png" >
+      <img style="border-radius: 10px;" src="../images/properties.png" >
       <div class="property-details">
         <p class="price" style="letter-spacing: 3px;">Real Estate Example</p>
-        <span  class="beds" style="font-size: 14px;" >Properties</span>
-        <span class="baths" style="font-size: 14px;" >Buy</span>
-        <span class="beds" style="font-size: 14px;" >Pay</span>
-        <span  class="sqft" style="font-size: 14px;" >Contact</span>
+        <div id=number5>
+        <span  class="beds"  >Properties</span>
+        <span class="baths"  >Buy</span>
+        <span class="beds"  >Pay</span>
+        <span  class="sqft"  >Contact</span>
+        </div>
          
     
         <button onclick="window.location.href = 'https://talalzeini.github.io/real-estate/'" class="demo">Demo
@@ -235,13 +249,15 @@
     </div>
 
   <div>
-    <img class="pizza" style="border-radius: 50px;" src="../images/piz.png" >
+    <img class="pizza" style="border-radius: 10px;" src="../images/piz.png" >
     <div class="property-details">
       <p class="price"style="letter-spacing: 3px;" >Tip Calculator</p>
-      <span  class="beds" style="font-size: 14px;" >Bill</span>
-      <span class="baths" style="font-size: 14px;" >Food</span>
-      <span class="beds" style="font-size: 14px;" >Service</span>
-      <span  class="sqft" style="font-size: 14px;" >Tip</span>
+      <div id=number6>
+      <span  class="beds"  >Bill</span>
+      <span class="baths"  >Food</span>
+      <span class="beds"  >Service</span>
+      <span  class="sqft"  >Tip</span>
+      </div>
        
 
       <button onclick="window.location.href = 'https://talalzeini.github.io/tip-calculator'" class="demo">Demo
@@ -254,13 +270,15 @@
   
 
 <div>
-      <img style="border-radius: 50px;" src="../images/sc.png" >
+      <img style="border-radius: 10px;" src="../images/sc.png" >
       <div class="property-details">
         <p class="price" style="letter-spacing: 3px;">Scientific Calculator</p>
-        <span  class="beds" style="font-size: 14px;" >Mathematics</span>
-        <span class="baths" style="font-size: 14px;" >Numbers</span>
-        <span class="beds" style="font-size: 14px;" >Functions</span>
-        <span  class="sqft" style="font-size: 14px;" >Calculations</span>
+        <div id=number7>
+        <span  class="beds"  >Mathematics</span>
+        <span class="baths"  >Numbers</span>
+        <span class="beds"  >Functions</span>
+        <span  class="sqft"  >Calculations</span>
+      </div>
          
     
         <button onclick="window.location.href = 'https://talalzeini.github.io/scientific-calculator'" class="demo">Demo
@@ -425,7 +443,7 @@ const hey = document.getElementById('over');
                 slidesToScroll: 1,
                 
                 autoplay:true,
-                autoplaySpeed:2500,
+                autoplaySpeed:1000,
                 arrows:false,
     
                  
@@ -466,7 +484,7 @@ const hey = document.getElementById('over');
                  slidesToShow: 1,
                  slidesToScroll: 1,
                  autoplay:true,
-                autoplaySpeed:2500,
+                autoplaySpeed:1000,
                 arrows:false,
                  
  
@@ -474,13 +492,20 @@ const hey = document.getElementById('over');
              });
              
        });
-     
-    
-
 
 </script>
 
-
+<script>
+           
+ if($(window).width() >= 0 && $(window).width() <= 600){
+  
+  document.getElementById('number5').classList.add('hide');
+  document.getElementById('number6').classList.add('hide');
+  document.getElementById('number7').classList.add('hide');
+  document.getElementById('number8').classList.add('hide');
+  document.getElementById('number9').classList.add('hide');
+  }
+</script>
     
   </body>
   </html>
