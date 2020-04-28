@@ -465,11 +465,6 @@ transition: all 0.1s ease-out;
 
 .box-img:hover { 
 background: url(../images/wink.jpg);
-background:cover;
-background-size:100%;
-border-radius: 50%;
-width: 250px;
-height: 250px;
 }
 .box h1{
 
@@ -1392,11 +1387,6 @@ transition: all 0.1s ease-out;
 }
 .box-img:hover { 
 background: url(../images/wink.jpg);
-background:cover;
-background-size:100%;
-border-radius: 50%;
-width: 150px; 
-height: 150px;
 }
 .box h1{
 

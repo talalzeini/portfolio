@@ -551,8 +551,6 @@ transform: translatey(0px);
     background: url(../images/contacting.jpg);
     background:cover;
     background-size:100%;
-   
-
 }
 .box h1{
 
@@ -1639,7 +1637,7 @@ transition: all 0.2s ease-out;
   height: 200px;
   transition: all 0.1s ease-out;
   transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
     
   }
  

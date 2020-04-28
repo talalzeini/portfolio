@@ -244,11 +244,7 @@ nav #menu {
     animation: float 6s ease-in-out infinite;
 }
 /* Bitmoji image hover */
-.box-img:hover { 
-    background: url(../images/aboutprofile.jpg);
-    background:cover;
-    background-size:100%;
-}
+
 /* Header About */
 .box h5{
     font-size: 70px;
@@ -852,11 +848,7 @@ nav #menu {
     animation: float 6s ease-in-out infinite;
 }
 /* Bitmoji image hover */
-.box-img:hover { 
-    background: url(../images/aboutprofile.jpg);
-    background:cover;
-    background-size:100%;
-}
+
 /* Header About */
 .box h5{
     font-size: 50px;
