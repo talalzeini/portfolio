@@ -561,7 +561,31 @@ p.copyright span {
     font-size: 30px;
 }
 /* Footer ends here */
-
+#resume{
+    width:200px; 
+    padding:10px 25px; 
+    border-radius: 30px; 
+    border:2px solid white; 
+    background-color: black; 
+    display: block; 
+    margin: 0px auto; 
+    color: white;
+    text-align: center; 
+    transition: all 0.5s ease-out;
+}
+#resume:hover{
+    text-decoration: none;
+    width:200px; 
+    padding:10px 25px; 
+    border-radius: 30px; 
+    border:2px solid white; 
+    background-color: white; 
+    display: block; 
+    margin: 0px auto; 
+    color: black;
+    text-align: center; 
+    transition: all 0.5s ease-out;
+}
 
 
 /*  */
@@ -847,8 +871,6 @@ nav #menu {
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
 }
-/* Bitmoji image hover */
-
 /* Header About */
 .box h5{
     font-size: 50px;
