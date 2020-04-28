@@ -464,7 +464,15 @@ transition: all 0.1s ease-out;
 }
 
 .box-img:hover { 
-background: url(../images/wink.jpg);
+background: url(../images/wink.jpg) no-repeat center;
+background:cover;
+background-size:100%;
+border-radius: 50%;
+width: 250px;
+transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
+height: 250px;
+transition: all 0.1s ease-out;
 }
 .box h1{
 
@@ -1386,7 +1394,16 @@ height: 150px;
 transition: all 0.1s ease-out;
 }
 .box-img:hover { 
-background: url(../images/wink.jpg);
+background: url(../images/wink.jpg) no-repeat center;
+background-size:cover;
+background-position: center;
+animation: fadeInRightBig 2s;
+border-radius: 50%;
+width: 150px; 
+margin: 0 auto;
+display: block;
+height: 150px;
+transition: all 0.1s ease-out;
 }
 .box h1{
 
