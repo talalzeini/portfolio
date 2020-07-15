@@ -536,7 +536,7 @@ border-color: transparent;
 font-family: 'Courier New', sans-serif;
 }
 .box-img{
-background: url(../images/walking.jpg);
+background: url(../images/walking.png);
 background:cover;
 background-size:100%;
 width: 250px;
@@ -758,6 +758,8 @@ transform:translate(-50%,-50%);
   }
 .form-items .subject{
     width: 100%;
+    margin: 0 auto;
+    display: block;
     margin-bottom: 12px;
     padding: 15px 40px;
     box-sizing: border-box;
@@ -783,12 +785,12 @@ transform:translate(-50%,-50%);
 
     width: 100%;
     margin-bottom: 12px;
-    padding: 15px 40px;
+    padding: 15px 30px;
     box-sizing: border-box;
     background: white;
     border: 0px;
     outline: none;
-    border-radius: 30px;
+    border-radius: 20px;
     resize: none;
     transition: all 0.2s ease-out;
 }
@@ -796,12 +798,10 @@ transform:translate(-50%,-50%);
 
     width: 100%;
     margin-bottom: 12px;
-    padding: 15px 40px;
     box-sizing: border-box;
     background: #ebeef1;
     border: 0px;
     outline: none;
-    border-radius: 30px;
     transform: scale(1.1);
     resize: none;
 }
