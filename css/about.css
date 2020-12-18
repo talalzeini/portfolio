@@ -2,107 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Roboto Mono" !important;
+    overflow:initial;
+    font-family: "Avenir" !important;
     background: black !important;
     color: #fff !important;
 }
-/* Navbar starts here */
-nav {
-    width: 100%;
-    background: black;
-    height: 80px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-}
-nav #menu {
-    float: left;
-    right: 80px;
-    position: fixed;
-}
-nav #menu li {
-    padding-left: 40px;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 300;
-    line-height: 80px;
-    position: relative;
-    transition: all 0.3s ease-out;
-}
-nav #menu li span {
-    font-weight: 700;
-}
-nav #menu li a {
-    color: #fff;
-    transition: all 0.1s ease-out;
-    font-size:15px;
-    padding: 5px 25px;
-    border-radius:30px;    
-    }
-nav #menu li a:hover {
-    text-decoration: none;
-    background-color: white;
-    color:black;
-}
-/* Full name starts here */
-.contents:before {
-    content: 'Talal Zeini';
-    left: 80px;
-    position: fixed;
-    color:white;
-    float: left;
-    display: block;
-    font-size:15px;
-    line-height: 80px;
-    font-weight: normal;  
-}
-.contents:hover:before {
-    content: 'Talal Ghassan Zeini';   
-    color:white;
-}
-/* Full name ends here */
-#toggle {
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    font-weight: 300;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    float: right;
-    transition: all 0.1s ease-out;
-    visibility: hidden;
-    opacity: 0;
-}
-#toggle:hover{
-    color:#99ff66;
-    font-size:20px;
-}
-@media(max-width: 768px) {
-#toggle {
-    visibility: visible;
-    opacity: 1;
-    margin-top: 6px;
-    margin-right: 4px;
-}
-#menu a {
-    font-size: 20px;
-    font-weight: 300;
-}
-#resize li span {
-    font-weight: bolder;
-}
-nav #menu {
-    display: none;
-}
-}
-@media(min-width: 768px) {
-#resize {
-    visibility: hidden !important;
-}
-}
-/* Navbar ends here */
+
 
 /* Scroll animation starts here */
 .scroll-down {
@@ -119,20 +24,7 @@ nav #menu {
     -webkit-transform: translate(-50%, 0) rotate(0deg);
     animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
-@keyframes fade_move_down {
-0%{
-    transform: translate(0, -20px) rotate(45deg);
-    opacity: 0;
-}
-50%{
-    opacity: 1;
-}
-100%{
-    transform: translate(0, 20px) rotate(45deg);
-    opacity: 0;
-}
-}
-/* Scroll animation ends here */
+
 
 /* Horizontal line starts here */
 .hr {
@@ -146,7 +38,7 @@ nav #menu {
     list-style: none;
 }
 #media ul li {
-    animation: float 6s ease-in-out infinite;
+    
     display: inline-block;
     position: relative;
     width:50px;
@@ -229,7 +121,7 @@ nav #menu {
     color: white;
     position: relative;
     top: 100px;
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Avenir', sans-serif;
 }
 /* Bitmoji image */
 .box-img{
@@ -241,7 +133,7 @@ nav #menu {
     height: 250px;
     transition: all 0.1s ease-out;
     transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    
 }
 /* Bitmoji image hover */
 
@@ -265,20 +157,7 @@ ul{
     font-size: 60px;
     transition: all 0.5s ease-out;
 }
-.plane .text{
-    font-size:20px;
-    color:transparent;
-    width:0;
-    text-align: center;
-    white-space: nowrap;
-    margin: auto;
-    transition: all 0.5s ease-out;
-}
-.plane:hover .text{
-    text-align: center;
-    color:white;
-    margin: auto;
-}
+
 .box span li a {
     color: white;
     text-decoration: none;
@@ -358,22 +237,8 @@ h1 {
 }
 /* Columns and rows ends here */
 
-/* Float animation starts here */
-@keyframes float {
-0% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-}
-50% {
-    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-    transform: translatey(-20px);
-}
-100% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-}
-}
-/* Float animation ends here */
+
+
 
 /* Fitting columns starts here */
 @media screen and (max-width: 980px) {
@@ -389,155 +254,6 @@ h1 {
 }
 /* Fitting columns ends here */
 
-
-/* Hamburger menu button */
-.menu-wrap {
-    position: fixed;
-    top: 7px;
-    right: 0;
-    z-index: 1;
-}
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-}
-.menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* Hamburger Line */
-.menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-}
-/* Hamburger Lines - Top & Bottom */
-.menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-}
-/* Moves Line Down */
-.menu-wrap .hamburger > div::after {
-    top: 10px;
-}
-/* Toggler Animation */
-.menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-}
-/* Turns Lines Into X */
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-}
-/* Rotate On Hover When Checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-}
-/* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-}
-.menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menu-speed);
-}
-.menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
-}
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black center;
-}
-.menu-wrap .menu > div {
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-}
-.menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-.menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-    font-size: 40px;
-    padding: 1rem;
-}
-.menu-wrap .menu > div > div > ul > li > a {
-    color: white;
-    text-decoration: none;
-    border: 2px solid white;
-    width:700px;
-    padding: 10px 25px;
-    transition: all 1.5s;
-}
-.menu-wrap .menu  .active{
-    color: black;
-    text-decoration: none;
-    border: 2px solid white;
-    background-color: white;
-    width:700px;
-    padding: 10px 25px;
-    transition: all 0.75s;
-}
-.menu-wrap .menu > div > div > ul > li > a:hover {
-    background-color: white;
-    color:black;
-    width:700px;
-    padding: 10px 25px;
-    transition: all 0.75s;
-}
 
 /* Footer starts here */
 footer {
@@ -564,7 +280,7 @@ p.copyright span {
 #resume{
     width:200px; 
     padding:10px 25px; 
-    border-radius: 30px; 
+    border-radius: 5px; 
     border:2px solid white; 
     background-color: black; 
     display: block; 
@@ -575,15 +291,9 @@ p.copyright span {
 }
 #resume:hover{
     text-decoration: none;
-    width:200px; 
-    padding:10px 25px; 
-    border-radius: 30px; 
     border:2px solid white; 
     background-color: white; 
-    display: block; 
-    margin: 0px auto; 
     color: black;
-    text-align: center; 
     transition: all 0.5s ease-out;
 }
 
@@ -634,102 +344,10 @@ html, body {
     background: black !important;
     color: #fff !important;
 }
-/* Navbar starts here */
-nav {
-    width: 100%;
-    background: black;
-    height: 80px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-}
-nav #menu {
-    float: left;
-    right: 80px;
-    position: fixed;
-}
-nav #menu li {
-    padding-left: 40px;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 300;
-    line-height: 80px;
-    position: relative;
-    transition: all 0.3s ease-out;
-}
-nav #menu li span {
-    font-weight: 700;
-}
-nav #menu li a {
-    color: #fff;
-    transition: all 0.1s ease-out;
-    font-size:15px;
-    padding: 5px 25px;
-    border-radius:30px;    
-    }
-nav #menu li a:hover {
-    text-decoration: none;
-    background-color: white;
-    color:black;
-}
-/* Full name starts here */
-.contents:before {
-    content: 'Talal';
-    left: 18px;
-    position: fixed;
-    color:white;
-    float: left;
-    display: block;
-    font-size:15px;
-    line-height: 80px;
-    font-weight: normal;  
-}
-.contents:hover:before {
-    content: 'Talal Zeini';   
-    color:white;
-}
-/* Full name ends here */
-#toggle {
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    font-weight: 300;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    float: right;
-    transition: all 0.1s ease-out;
-    visibility: hidden;
-    opacity: 0;
-}
-#toggle:hover{
-    color:#99ff66;
-    font-size:20px;
-}
-@media(max-width: 768px) {
-#toggle {
-    visibility: visible;
-    opacity: 1;
-    margin-top: 6px;
-    margin-right: 4px;
-}
-#menu a {
-    font-size: 20px;
-    font-weight: 300;
-}
-#resize li span {
-    font-weight: bolder;
-}
-nav #menu {
-    display: none;
-}
-}
-@media(min-width: 768px) {
-#resize {
-    visibility: hidden !important;
-}
-}
+
+
+
+
 /* Navbar ends here */
 
 /* Scroll animation starts here */
@@ -745,21 +363,8 @@ nav #menu {
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
     -webkit-transform: translate(-50%, 0) rotate(0deg);
-    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
-@keyframes fade_move_down {
-0%{
-    transform: translate(0, -20px) rotate(45deg);
-    opacity: 0;
-}
-50%{
-    opacity: 1;
-}
-100%{
-    transform: translate(0, 20px) rotate(45deg);
-    opacity: 0;
-}
-}
+
 /* Scroll animation ends here */
 
 /* Horizontal line starts here */
@@ -769,80 +374,7 @@ nav #menu {
 }
 /* Horizontal line ends here */
 
-/* Social media icons starts here */
-#media ul {
-    list-style: none;
-}
-#media ul li {
-    animation: float 6s ease-in-out infinite;
-    display: inline-block;
-    position: relative;
-    width:50px;
-    padding:10%;
-}
-#media ul li a{
-    font-size: 40px;
-    color: white;
-    transition: color 0.5s ease-out;
-    transition: font-size 0.1s ease-out;
-}
-#media ul li a:hover{
-    color:gray;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    text-decoration: none;
-}
-#media ul span li a{
-    font-size: 40px;
-    color: white;
-    transition: color 0.5s ease-out;
-    transition: font-size 0.1s ease-out;
-}
-#media ul span li a:hover{
-    color: #38A1F3;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    text-decoration: none;
-}
-#media ul span span li a{
-    font-size: 40px;
-    color: white;
-    transition: color 0.5s ease-out;
-    transition: font-size 0.1s ease-out;
-}
-#media ul span span li a:hover{
-    color: #0e76a8;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    text-decoration: none;
-}
-#media ul span span span li a{
-    font-size: 40px;
-    color: white;
-    transition: color 0.5s ease-out;
-    transition: font-size 0.1s ease-out;    
-}
-#media ul span span span li a:hover{
-    border-radius: 40%;
-    height:42px;
-    color:white;
-    text-decoration: none;
-    width: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent; 
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 90%); 
-    }
+
 /* Social media icons ends here */
 
 /* Main box starts here */
@@ -857,7 +389,7 @@ nav #menu {
     color: white;
     position: relative;
     top: 100px;
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Avenir';
 }
 /* Bitmoji image */
 .box-img{
@@ -869,7 +401,7 @@ nav #menu {
     height: 200px;
     transition: all 0.1s ease-out;
     transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    
 }
 /* Header About */
 .box h5{
@@ -991,22 +523,6 @@ h1 {
 }
 /* Columns and rows ends here */
 
-/* Float animation starts here */
-@keyframes float {
-0% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-}
-50% {
-    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-    transform: translatey(-20px);
-}
-100% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-}
-}
-/* Float animation ends here */
 
 /* Fitting columns starts here */
 @media screen and (max-width: 980px) {
@@ -1022,155 +538,6 @@ h1 {
 }
 /* Fitting columns ends here */
 
-
-/* Hamburger menu button */
-.menu-wrap {
-    position: fixed;
-    top: 7px;
-    right: 0;
-    z-index: 1;
-}
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-}
-.menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* Hamburger Line */
-.menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-}
-/* Hamburger Lines - Top & Bottom */
-.menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-}
-/* Moves Line Down */
-.menu-wrap .hamburger > div::after {
-    top: 10px;
-}
-/* Toggler Animation */
-.menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-}
-/* Turns Lines Into X */
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-}
-/* Rotate On Hover When Checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-}
-/* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-}
-.menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menu-speed);
-}
-.menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
-}
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black center;
-}
-.menu-wrap .menu > div {
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-}
-.menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-.menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-    font-size: 25px;
-    padding: 1rem;
-}
-.menu-wrap .menu > div > div > ul > li > a {
-    color: white;
-    text-decoration: none;
-    border: 2px solid white;
-    width:700px;
-    padding: 10px 25px;
-    transition: all 1.5s;
-}
-.menu-wrap .menu  .active{
-    color: black;
-    text-decoration: none;
-    border: 2px solid white;
-    background-color: white;
-    width:400px;
-    padding: 10px 25px;
-    transition: all 0.75s;
-}
-.menu-wrap .menu > div > div > ul > li > a:hover {
-    background-color: white;
-    color:black;
-    width:400px;
-    padding: 10px 25px;
-    transition: all 0.75s;
-}
 
 /* Footer starts here */
 footer {

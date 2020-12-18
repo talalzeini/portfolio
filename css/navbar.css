@@ -1,0 +1,607 @@
+/* Navigation bar */
+nav {
+    width: 100%;
+    background: black;
+    height: 80px;
+    top: 0;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 1;
+    }
+    
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /* Name appearing */
+    .top-left-name:before {
+    content: 'Talal Zeini';
+    left: 50px;
+    position: fixed;
+    color:white;
+    float: left;
+    display: block;
+    font-size:15px;
+    line-height: 80px;
+    font-weight: normal;   
+    }
+    /* Middle name appearing on hover */
+    .top-left-name:hover:before {
+    content: 'Talal Ghassan Zeini';   
+    color:white;
+    }
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    nav #menu {
+    float: left;
+    right: 80px;
+    position: fixed;
+    }
+    nav #menu li {
+    padding-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.3s ease-out;
+    }
+    nav #menu li span {
+    font-weight: 700;
+    }
+    nav #menu li a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+    font-size:15px;
+    padding: 5px 25px;
+    border-radius:5px;    
+    }
+    nav #menu li a:hover {
+          transition: all 0.3s ease-out;
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    }
+
+
+    @media(max-width: 768px) {
+        
+        #menu a {
+            font-size: 20px;
+            font-weight: 300;
+        }
+        #resize li span {
+            font-weight: bolder;
+        }
+        nav #menu {
+            display: none;
+        }
+        }
+       
+
+
+      
+      
+      /* Hamburger menu button */
+      .menu-wrap {
+        position: fixed;
+        top: 7px;
+        right: 0;
+        z-index: 1;
+        
+        
+        }
+        
+        .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        }
+        
+        .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        /* Hamburger Line */
+        .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        }
+        
+        /* Hamburger Lines - Top & Bottom */
+        .menu-wrap .hamburger > div::before,
+        .menu-wrap .hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        }
+        
+        /* Moves Line Down */
+        .menu-wrap .hamburger > div::after {
+        top: 10px;
+        }
+        
+        /* Toggler Animation */
+        .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+        }
+        
+        /* Turns Lines Into X */
+        .menu-wrap .toggler:checked + .hamburger > div:before,
+        .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+        }
+        
+        /* Rotate On Hover When Checked */
+        .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+        }
+        
+        /* Show Menu */
+        .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+        }
+        
+        .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: var(--menu-speed);
+        }
+        .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition:  opacity 0.4s ease 0.4s;
+        }
+        .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black center;
+        }
+        .menu-wrap .menu > div {
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+        }
+        .menu-wrap .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        }
+        .menu-wrap .menu > div > div > ul > li {
+        list-style: none;
+        font-family: 'Avenir';
+        color: #fff;
+        font-size: 40px;
+        padding: 1rem;
+        }
+        .menu-wrap .menu > div > div > ul > li > a {
+        color: white;
+        text-decoration: none;
+        border: none;
+        width:700px;
+        padding: 10px 25px;
+        
+        }
+        .menu-wrap .menu  .active{
+        color: black;
+        text-decoration: none;
+        border: none;
+        width:700px;
+        padding: 10px 25px;
+        }
+        .menu-wrap .menu > div > div > ul > li > a:hover {
+        text-decoration: underline;
+        width:700px;
+        padding: 10px 25px;
+        }
+
+
+
+
+        @media only screen and (max-width:414px) and (min-width:320px){
+
+            /* Navigation bar */
+      nav {
+        width: 100%;
+        background: black;
+        height: 80px;
+        top: 0;
+        overflow-y: hidden;
+        position: fixed;
+        z-index: 1;
+        }
+        
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /* Name appearing */
+        .top-left-name:before {
+        content: 'Talal';
+        left: 18px;
+        position: fixed;
+        color:white;
+        float: left;
+        display: block;
+        font-size:15px;
+        line-height: 80px;
+        font-weight: normal;   
+        }
+        /* Middle name appearing on hover */
+        .top-left-name:hover:before {
+        content: 'Talal Zeini';   
+        color:white;
+        }
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        nav #menu {
+        
+        position: fixed;
+        }
+        nav #menu li {
+        padding-left: 40px;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 300;
+        line-height: 80px;
+        position: relative;
+        transition: all 0.3s ease-out;
+        }
+        nav #menu li span {
+        font-weight: 700;
+        }
+        nav #menu li a {
+        color: #fff;
+        transition: all 0.1s ease-out;
+        font-size:15px;
+        padding: 5px 25px;
+        border-radius:5px;
+        
+        }
+        nav #menu li a:hover {
+        text-decoration: none;
+        background-color: white;
+        color:black;
+        }
+        .close-btn {
+            display: block;
+            margin: auto;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            width:  75px;
+            text-align: center;
+            font-weight: 300;
+            color:white;
+            cursor: pointer;
+            border-radius: 30px;
+            float: right;
+            
+            }
+            .close-btn:hover{
+            background-color: white;
+            color:black;
+            }
+        }
+
+
+
+        @media(max-width: 768px) {
+     
+      
+            nav #brand {
+                  margin-left: 24px;
+            }
+            
+            #menu a {
+                  font-size: 20px;
+                  font-weight: 300;
+            }
+           
+            
+            nav #menu {
+                  display: none;
+            }
+            }
+              
+
+
+
+
+
+
+
+
+            @media only screen and (max-width:414px) and (min-width:320px){
+
+
+
+
+
+
+               
+      
+      
+      /* Hamburger menu button */
+      .menu-wrap {
+        position: fixed;
+        top: 7px;
+        right: 0;
+        z-index: 1;
+        
+        
+        }
+        
+        .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        }
+        
+        .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        /* Hamburger Line */
+        .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        }
+        
+        /* Hamburger Lines - Top & Bottom */
+        .menu-wrap .hamburger > div::before,
+        .menu-wrap .hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        }
+        
+        /* Moves Line Down */
+        .menu-wrap .hamburger > div::after {
+        top: 10px;
+        }
+        
+        /* Toggler Animation */
+        .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+        }
+        
+        /* Turns Lines Into X */
+        .menu-wrap .toggler:checked + .hamburger > div:before,
+        .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+        }
+        
+        /* Rotate On Hover When Checked */
+        .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+        }
+        
+        /* Show Menu */
+        .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+        }
+        
+        .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: var(--menu-speed);
+        }
+        .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition:  opacity 0.4s ease 0.4s;
+        }
+        .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black center;
+        }
+        .menu-wrap .menu > div {
+        
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+        }
+        .menu-wrap .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        }
+        .menu-wrap .menu > div > div > ul > li {
+        list-style: none;
+        font-family: 'Avenir';
+        color: #fff;
+        font-size: 25px;
+        padding: 1rem;
+        }
+        .menu-wrap .menu > div > div > ul > li > a {
+        color: white;
+        text-decoration: none;
+        border: none;
+        width:400px;
+        padding: 5px 15px;
+        transition: all 1.5s;
+        }
+        .menu-wrap .menu  .active{
+        color: black;
+        text-decoration: none;
+        border: none;
+        background-color: white;
+        width:400px;
+        padding: 5px 15px;
+        transition: all 0.75s;
+        }
+        .menu-wrap .menu > div > div > ul > li > a:hover {
+        background-color: white;
+        color:black;
+        width:400px;
+        text-decoration: underline;
+        padding: 5px 15px;
+        transition: all 0.75s;
+        }
+        
+        
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        }
+  
+  
+  
+      @media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+            margin-right: 4px;
+      }
+      
+      nav #brand {
+            margin-left: 24px;
+      }
+      
+      #menu a {
+            font-size: 20px;
+            font-weight: 300;
+      }
+      
+      #resize li span {
+            font-weight: bolder;
+      }
+      
+      nav #menu {
+            display: none;
+      }
+      }
+      
+      @media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+      }
+      

@@ -1,0 +1,21 @@
+
+#swift-icon:hover{
+    cursor: pointer;
+    color:orange;
+}
+#html-icon:hover{
+    color:#e34f26;
+    cursor: pointer;
+}
+#unity-icon:hover{
+    color:gray;
+    cursor: pointer;
+}
+#css-icon:hover{
+    color:#2965f1;
+    cursor: pointer;
+}
+#js-icon:hover{
+    color:yellow;
+    cursor: pointer;
+}

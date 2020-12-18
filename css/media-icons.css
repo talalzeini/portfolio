@@ -1,0 +1,68 @@
+#insta-icon {
+    border-radius: 40%;
+    height:42px;
+    background: white;
+    color:white;
+    text-decoration: none;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insta-icon i{
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#twitter-icon{
+    height:42px;
+    color:#00acee;
+    text-decoration: none;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; 
+}
+#linked-icon{
+    height:42px;
+    color:#0e76a8;
+    text-decoration: none;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; 
+}
+#wp-icon{
+    color:#25D366;
+    height:42px;
+    text-decoration: none;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+#git-icon{
+    color:#6e5494;
+    height:42px;
+    text-decoration: none;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+@media screen and (max-width:900px){
+    .media-icons{
+        display:block;
+        height:22px;
+        text-decoration: none;
+        width: 22px;
+        transform: scale(0.7);
+        padding-right:15px;
+    }
+}

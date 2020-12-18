@@ -1,0 +1,82 @@
+
+
+@keyframes fade_move_down {
+    0% {
+          transform: translate(0, -20px) rotate(45deg);
+          opacity: 0;
+    }
+    50% {
+          opacity: 1;
+    }
+    100% {
+          transform: translate(0, 20px) rotate(45deg);
+          opacity: 0;
+    }
+}
+
+
+/* Float animation starts here */
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    }
+
+
+    @keyframes typewriter {
+        from {
+        width: 0;
+        }
+        to {
+        width: 25em;
+        }
+        }
+        @media(max-width: 768px) {
+        @keyframes typewriter {
+        from {
+              width: 0;
+        }
+        to {
+              width: 25em;
+        }
+        }
+        }
+        @keyframes blinkTextCussor {
+        from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+        border-right-color: transparent;
+        }
+        }
+
+
+        @keyframes flying{
+            0% {
+                  transform: rotate(15deg);
+            }
+            50% {
+                  transform: rotate(-5deg);
+            }
+            100% {
+                  transform: rotate(15deg);
+            }
+      }
+      
+
+      @keyframes blink {
+        0%  { background-color: #ccc; }
+        49% { background-color: #ccc; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: #ccc; }
+      }
