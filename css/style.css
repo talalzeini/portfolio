@@ -86,12 +86,6 @@ body {
   padding: 20px;
   border-radius: 20px;
 }
-.website-images {
-  margin: 0px auto;
-  display: block;
-  width: 75%;
-  text-align: center;
-}
 .website-image {
   padding: 20px;
   width: 50%;
@@ -108,7 +102,7 @@ body {
 .website-image p {
   width: 100%;
   margin: 0 auto;
-  height: 75pxs;
+  height: 75px;
   display: block;
   text-align: center;
   margin-top: 10px;
@@ -214,6 +208,36 @@ body {
   .education-image p {
     width: 85%;
     height: 50%;
+  }
+  .website-image {
+    padding: 20px;
+    width: 75%;
+    border-radius: 20px;
+  }
+  .website-image img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .website-image p {
+    width: 100%;
+    margin: 0 auto;
+    height: 75px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 415px) {
+  .website-images {
+    text-align: center;
   }
 }
 @media (max-width: 770px) {
