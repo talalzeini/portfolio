@@ -87,28 +87,25 @@ body {
   border-radius: 20px;
 }
 .website-image {
-  padding: 20px;
   width: 50%;
   border-radius: 20px;
+  margin: 75px auto;
+  background: white;
 }
 .website-image img {
   width: 100%;
   margin: 0 auto;
   display: block;
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px;
+  border-radius: 7px;
 }
 .website-image p {
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
-  height: 75px;
   display: block;
   text-align: center;
   margin-top: 10px;
   color: black;
   background-color: white;
-  padding: 20px;
   border-radius: 20px;
 }
 .demoLink,
@@ -211,28 +208,15 @@ body {
   }
   .website-image {
     padding: 20px;
-    width: 75%;
+    width: 85%;
     border-radius: 20px;
   }
   .website-image img {
     width: 100%;
-    margin: 0 auto;
-    display: block;
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
   }
   .website-image p {
     width: 100%;
-    margin: 0 auto;
-    height: 75px;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: black;
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
+    font-size: 14px;
   }
 }
 @media (min-width: 415px) {
