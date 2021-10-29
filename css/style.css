@@ -2,6 +2,14 @@
   font-family: "Avenir";
   font-weight: normal;
   color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+hr {
+  width: 25%;
 }
 .landing-page {
   height: 100vh;
@@ -33,7 +41,7 @@
   margin: 0 auto;
   display: block;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .name {
@@ -41,6 +49,7 @@
 }
 .name,
 .info {
+  font-weight: bold;
   color: white;
   text-align: center;
   letter-spacing: 2px;
@@ -118,19 +127,19 @@
   display: block;
   background-color: white;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 7px;
 }
-.education-image p {
+.education-image p:not(.programLink) {
   width: 100%;
   margin: 0 auto;
   height: 75pxs;
   display: block;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
   color: black;
   background-color: white;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 7px;
 }
 .website-image {
   width: 50%;
@@ -160,6 +169,7 @@
 .programLink {
   color: black;
   text-decoration: none;
+  text-align: center;
 }
 .codeLink {
   margin-left: 20px;
@@ -216,7 +226,7 @@
 }
 .subTitle {
   text-align: center;
-  margin: -15px auto;
+  margin: 25px auto;
   display: block;
   text-decoration: none;
 }
@@ -242,6 +252,9 @@
   white-space: nowrap;
 }
 @media (max-width: 1000px) {
+  hr {
+    width: 75%;
+  }
   .scroll-down {
     width: 10px;
     height: 10px;
