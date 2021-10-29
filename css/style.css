@@ -120,7 +120,7 @@ hr {
   display: inline-block;
   padding: 20px;
   width: 25%;
-  border-radius: 20px;
+  border-radius: 7px;
 }
 .education-image img {
   width: 100%;
@@ -143,11 +143,15 @@ hr {
   border-radius: 7px;
 }
 .website-image {
-  width: 50%;
-  border-radius: 20px;
-  margin: 75px auto;
-  background: white;
+  width: 25%;
+  border-radius: 7px;
+  margin: 5px auto;
+  display: inline-block;
+  border: 2px solid white;
   padding: 20px;
+}
+.website-image h3 {
+  text-align: center;
 }
 .website-image img {
   width: 100%;
@@ -161,14 +165,35 @@ hr {
   display: block;
   text-align: center;
   margin-top: 10px;
-  color: black;
+  color: white;
+  border-radius: 7px;
+}
+.btn {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
   background-color: white;
-  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  width: 20%;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 7px;
+  margin: 5px auto;
+  display: inline-block;
+  transition: 0.25s;
+}
+.btn:hover {
+  transition: 0.25s;
+  background: #eeeeee;
 }
 .demoLink,
 .codeLink,
 .programLink {
   color: black;
+  background: white;
   text-decoration: none;
   text-align: center;
 }
@@ -177,11 +202,6 @@ hr {
 }
 .demoLink {
   margin-right: 20px;
-}
-.demoLink:hover,
-.codeLink:hover,
-.programLink:hover {
-  text-decoration: underline;
 }
 
 .plane-image {
@@ -283,7 +303,7 @@ hr {
   .website-image {
     padding: 20px;
     width: 85%;
-    border-radius: 20px;
+    border-radius: 7px;
   }
   .website-image img {
     width: 100%;
