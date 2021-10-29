@@ -117,6 +117,7 @@ hr {
   text-align: center;
 }
 .education-image {
+  display: inline-block;
   padding: 20px;
   width: 25%;
   border-radius: 20px;
@@ -129,7 +130,7 @@ hr {
   padding: 20px;
   border-radius: 7px;
 }
-.education-image p:not(.programLink) {
+.education-image p {
   width: 100%;
   margin: 0 auto;
   height: 75pxs;
@@ -252,6 +253,12 @@ hr {
   white-space: nowrap;
 }
 @media (max-width: 1000px) {
+  .fright {
+    float: none;
+  }
+  .fleft {
+    float: none;
+  }
   hr {
     width: 75%;
   }
@@ -264,14 +271,14 @@ hr {
   }
   .education-image {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 7px;
   }
   .education-image img {
     width: 85%;
   }
   .education-image p {
-    width: 85%;
     height: 50%;
+    width: 85%;
   }
   .website-image {
     padding: 20px;
