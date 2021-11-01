@@ -621,6 +621,18 @@ nav {
   .pageLink {
     font-size: 35px;
   }
+  .jobs {
+    width: 100%;
+  }
+  .jobs div {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 25%;
+    font-size: 15px;
+    position: relative;
+    transition: 0.25s;
+  }
 }
 
 .jobs {
@@ -705,18 +717,6 @@ nav {
 @media (max-width: 400px) {
   .mainTitle {
     font-size: 25px;
-  }
-  .jobs {
-    width: 100%;
-  }
-  .jobs div {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    color: rgba(255, 255, 255, 0.5);
-    width: 25%;
-    font-size: 15px;
-    position: relative;
-    transition: 0.25s;
   }
 }
 @media (max-width: 300px) {
