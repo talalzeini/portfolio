@@ -102,7 +102,6 @@ h3 {
 }
 .landing-page {
   height: 100vh;
-  border: 2px solid red;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -249,18 +248,7 @@ h3 {
   margin-top: 10px;
   color: black;
 }
-.education-image p {
-  width: 100%;
-  margin: 0 auto;
-  height: 75pxs;
-  display: block;
-  text-align: left;
-  margin-top: 10px;
-  color: black;
-  background-color: red;
-  padding: 20px;
-  border-radius: 7px;
-}
+
 .website-image {
   width: 25%;
   border-radius: 7px;
