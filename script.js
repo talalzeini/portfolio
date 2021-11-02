@@ -39,7 +39,6 @@ function show_skills() {
     }
 
     for (var i = 0; i < 9; i++){
-         console.log(new_array)
         document.getElementById('lang-' + i).src = "../images/skills/skills/" + new_array[i] + ".png"
     }
 }
@@ -59,18 +58,13 @@ function deactivate_job(ids) {
 
 
 function choose_job(id) {
-    ids = ['target', 'codeucate', 'amazon', 'apple']
+    ids = ['target', 'amazon', 'apple']
     var activeID = document.getElementById(id)
     if (id === 'target') {
         deactivate_job(ids)
         activeID.classList.add('active')
         title.innerHTML = "Retail Associate at Target"
         paragraph.innerHTML = "Learned outstanding customer service by engaging with customers and helping them, by providing the right answers for their questions regarding merchandise, and also directing them to the area within the store where they will find the item they are looking for.<br><br>Maintained accurate and attractive merchandise displays, ensuring strategic placement of products to make the store more appealing and to drive sales and provide a stimulating and enjoyable shopping experience for the customers. "
-    } else if (id === "codeucate") {
-        deactivate_job(ids)
-        activeID.classList.add('active')
-        title.innerHTML = "Web Development Intern at Codeucate"
-        paragraph.innerHTML = "Collaborated with the frontend team, and contributed to the web application <a style='color:#85C1E9;text-decoration:none;' href='https://wecodeucate.org'>wecodeucate.org</a> using HTML, CSS, JavaScript, Bootstrap and React.js. "
     } else if (id === "amazon") {
         deactivate_job(ids)
         activeID.classList.add('active')

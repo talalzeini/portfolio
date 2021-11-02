@@ -32,15 +32,15 @@
         <!-- NAVBAR -->
         <!-- NAVBAR -->
         <nav>
-            <div class="menu-wrap">
+        
             <p class='corner-name'>
                 <a href='https://codingsensation.com'><img style='width:35px' src="../images/white-logo.png" alt=""></a>
             </p>
-            </div>
+
        
         </nav>
  
-            <img src='images/bitmoji/plane.png' class='hello-image'/>
+            <img src='images/bitmoji/plane.png' class='landing-image'/>
         <div class="scroll-down"></div>
         
         <!-- NAVBAR -->
@@ -95,7 +95,7 @@
 <!-- ABOUT SECTION STARTS HERE -->
 <div class='about-section'>
 
-    <h1 class="mainTitle">
+    <h1 class="name">
         ABOUT ME
     </h1>
     <hr class='hr-50'>
@@ -133,29 +133,26 @@
 
 <!-- EXPERIENCE SECTION STARTS HERE -->
 <div class='experience-section'>
-    <h1 class="mainTitle">
+    <h1 class="name">
         EXPERIENCE
     </h1>
     <hr class='hr-50'>
     <br>
-    <div class='jobs'>
-        <div id='target' onclick='choose_job(this.id)'>
+    <div class='achievements'>
+        <div id='target' class='job' onclick='choose_job(this.id)'>
             Target
         </div>
-        <div id='codeucate' onclick='choose_job(this.id)'>
-            Codeucate
-        </div>
-        <div id='amazon' onclick='choose_job(this.id)'>
+        <div id='amazon' class='job' onclick='choose_job(this.id)'>
             Amazon
         </div>
-        <div class='active' id='apple' onclick='choose_job(this.id)'>
+        <div class='active job' id='apple' onclick='choose_job(this.id)'>
             Apple
         </div>
     </div>
     <br>
     <br>
     <h3 id='job-title'>Title</h3>
-    <p id='job-paragraph'>
+    <p id='job-paragraph' class='job-paragraph'>
         Paragraph
     </p>
 </div>
@@ -166,19 +163,18 @@
 
 <!-- SCHOOL PROJECTS SECTION STARTS HERE -->
 <div class='experience-section'>
-    <h1 class="mainTitle">
+    <h1 class="name">
         SCHOOL PROJECTS
     </h1>
     <hr class='hr-50'>
     <br>
 
-
-    <div class='proj'>
-        <div>
+    <div class='achievements'>
+        <div class='school-project'>
             Rapberry Pi
         </div>
-        <div class='active'>
-            AMATYC SRL
+        <div class='school-project active'>
+            AMATYC<span class='srl-label'> SRL</span>
         </div>
     </div>
 
@@ -293,54 +289,54 @@
         <div style='margin-top:150px;'>
             <h1 class='name'>WEBSITES</h1>
             <hr class='hr-25'>
-            <div class='website-images' style='margin-top:50px;'>
+            <div style='margin-top:50px;'>
                 <!-- Link Tree -->
                 <!-- Link Tree -->
                 <!-- Link Tree -->
-                <div onclick="window.location='https://tzeini.web.app'" class='website-image'>
+                <div onclick="window.location='https://tzeini.web.app'" class='website-link'>
                     <h3>Links Tree</h3>
                 </div>
                 <!-- Corona Tracker -->
                 <!-- Corona Tracker -->
                 <!-- Corona Tracker -->
-                <div onclick="window.location='https://talalzeini.github.io/tracorona.live'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/tracorona.live'" class='website-link'>
                     <h3>Corona Tracker</h3>
                 </div>
                 <!-- CRYPTO TRACKER -->
                 <!-- CRYPTO TRACKER -->
                 <!-- CRYPTO TRACKER -->
-                <div onclick="window.location='https://talalzeini.github.io/crypto-tracker'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/crypto-tracker'" class='website-link'>
                     <h3>Crypto Tracker</h3>
                 </div>
                 <!-- LOGS TRACKER -->
                 <!-- LOGS TRACKER -->
                 <!-- LOGS TRACKER -->
-                <div onclick="window.location='https://logs-tracker.web.app'" class='website-image'>
+                <div onclick="window.location='https://logs-tracker.web.app'" class='website-link'>
                     <h3>Logs Tracker</h3>
                 </div>
                 <!-- Weather App -->
                 <!-- Weather App -->
                 <!-- Weather App -->
-                <div onclick="window.location='https://talalzeini.github.io/weather-app'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/weather-app'" class='website-link'>
                     <h3>Weather Tracker</h3>
                 </div>
                 <!-- Sorting Visualizer -->
                 <!-- Sorting Visualizer -->
                 <!-- Sorting Visualizer -->
-                <div onclick="window.location='https://talalzeini.github.io/sorting-visualizer'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/sorting-visualizer'" class='website-link'>
                     <h3>Sorting Visualizer</h3>
                 </div>
                 
                 <!-- Quiz Generator -->
                 <!-- Quiz Generator -->
                 <!-- Quiz Generator -->
-                <div onclick="window.location='https://talalzeini.github.io/quiz-generator'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/quiz-generator'" class='website-link'>
                     <h3>Quiz Generator</h3>
                 </div>
                 <!-- Website Generator -->
                 <!-- Website Generator -->
                 <!-- Website Generator -->
-                <div onclick="window.location='https://talalzeini.github.io/website-generator'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/website-generator'" class='website-link'>
                     <h3>Website Generator</h3>
                 </div>
            
@@ -349,20 +345,20 @@
                 <!-- REACT RESUME -->
                 <!-- REACT RESUME -->
                 <!-- REACT RESUME -->
-                <div onclick="window.location='https://talalzeini.github.io/react-resume'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/react-resume'" class='website-link'>
                     <h3>React Resume</h3>
                 </div>
            
                 <!-- Math Quiz -->
                 <!-- Math Quiz -->
                 <!-- Math Quiz -->
-                <div onclick="window.location='https://talalzeini.github.io/simple-quiz'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/simple-quiz'" class='website-link'>
                     <h3>Simple Quiz</h3>
                 </div>
                 <!-- SIMPLE CLOCK -->
                 <!-- SIMPLE CLOCK -->
                 <!-- SIMPLE CLOCK -->
-                <div onclick="window.location='https://talalzeini.github.io/simple-clock'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/simple-clock'" class='website-link'>
                     <h3>Simple Clock</h3>
                 </div>
 
@@ -371,26 +367,26 @@
                 <!-- TIP CALCULATOR -->
                 <!-- TIP CALCULATOR -->
                 <!-- TIP CALCULATOR -->
-                <div onclick="window.location='https://talalzeini.github.io/tip-calculator'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/tip-calculator'" class='website-link'>
                     <h3>Tip Calculator</h3>
                 </div>
             
                 <!-- REAL ESTATE -->
                 <!-- REAL ESTATE -->
                 <!-- REAL ESTATE -->
-                <div onclick="window.location='https://talalzeini.github.io/real-estate'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/real-estate'" class='website-link'>
                     <h3>Real Estate Website</h3>
                 </div>
                 <!-- ECOMMERCE -->
                 <!-- ECOMMERCE -->
                 <!-- ECOMMERCE -->
-                <div onclick="window.location='https://talalzeini.github.io/ecommerce-website'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/ecommerce-website'" class='website-link'>
                     <h3>E-commerce Website</h3>
                 </div>
                 <!-- SOCCER SIMULATION -->
                 <!-- SOCCER SIMULATION -->
                 <!-- SOCCER SIMULATION -->
-                <div onclick="window.location='https://talalzeini.github.io/soccer-game'" class='website-image'>
+                <div onclick="window.location='https://talalzeini.github.io/soccer-game'" class='website-link'>
                     <h3>Simulation Game</h3>
                 </div>
               
@@ -413,20 +409,20 @@
         <div style='margin-top:150px;'>
             <h1 class='name'>PROGRAMS</h1>
             <hr class='hr-25'>
-            <div class='website-images' style='margin-top:50px;'>
+            <div class='website-links' style='margin-top:50px;'>
                 <div style='display: block;'>
-                    <div onclick="window.location='https://github.com/talalzeini/python-projects'" class='website-image'>
+                    <div onclick="window.location='https://github.com/talalzeini/python-projects'" class='website-link'>
                         <h3>Python</h3>
                     </div>
             
-                    <div onclick="window.location='https://github.com/talalzeini/4A'" class='website-image'>
+                    <div onclick="window.location='https://github.com/talalzeini/4A'" class='website-link'>
                         <h3>Introduction to C++</h3>
                     </div>
-                    <div onclick="window.location='https://github.com/talalzeini/4B'" class='website-image'>
+                    <div onclick="window.location='https://github.com/talalzeini/4B'" class='website-link'>
                         <h3>Data Structures in C++</h3>
                     </div>
           
-                    <div onclick="window.location='https://github.com/talalzeini/ASM'" class='website-image'>
+                    <div onclick="window.location='https://github.com/talalzeini/ASM'" class='website-link'>
                         <h3>Assembly</h3>
                     </div>
                 </div>
@@ -458,5 +454,5 @@
             </div>
         </footer>
 </body>
-<script src='js/script.js'></script>
+<script src='script.js'></script>
 </html>
