@@ -370,10 +370,11 @@ h3 {
   margin: 0 auto;
   width: 75%;
 }
-.footer-info a {
+.footer-info p {
+  text-decoration: none;
   text-align: center;
   display: block;
-  margin-top: 5px;
+  margin: 10px auto;
   white-space: nowrap;
 }
 /* 01 */
