@@ -39,7 +39,7 @@ function show_skills() {
     }
 
     for (var i = 0; i < 9; i++){
-        document.getElementById('lang-' + i).src = "../images/skills/skills/" + new_array[i] + ".png"
+        document.getElementById('lang-' + i).src = "../images/skills/skills/" + new_array[i] + ".webp"
     }
 }
 
