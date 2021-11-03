@@ -14,6 +14,9 @@ h2,
 h3 {
   text-align: center;
 }
+h2 {
+  font-size: 22px;
+}
 * {
   font-family: "Avenir";
   font-weight: normal;
@@ -56,6 +59,9 @@ h3 {
 }
 .link i {
   color: black;
+}
+.fa-satellite {
+  margin: 15px;
 }
 /* 01 */
 /* 02 */
@@ -424,7 +430,7 @@ nav {
   margin: 0 auto;
 }
 .achievements .job {
-  width: 25%;
+  width: 33.33%;
 }
 .achievements .school-project {
   width: 50%;
