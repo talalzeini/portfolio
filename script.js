@@ -10,13 +10,13 @@ paragraph.innerHTML = "Assessed the situation of customers that need assistance 
 
 
 function wink(){
-    document.getElementById('profile-image').src = "images/bitmoji/wink.png"
+    document.getElementById('profile-image').src = "images/bitmoji/wink.webp"
 }
 function smile(){
-    document.getElementById('profile-image').src = "images/bitmoji/profile.png"
+    document.getElementById('profile-image').src = "images/bitmoji/profile.webp"
 }
 function scream(){
-    document.getElementById('profile-image').src = "images/bitmoji/scream.png"
+    document.getElementById('profile-image').src = "images/bitmoji/scream.webp"
 }
 
 
