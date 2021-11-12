@@ -186,6 +186,9 @@ h2 {
   display: block;
   text-align: center;
 }
+.media {
+  padding: 0;
+}
 .media-icons {
   display: inline-block;
 }
