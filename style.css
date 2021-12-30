@@ -503,17 +503,22 @@ nav {
   background-color: white;
   font-size: 16px;
   color: black;
-  /* width: 10%; */
   text-transform: uppercase;
   text-align: center;
   border-radius: 7px;
-  margin: 5px auto;
+  margin: 10px auto;
   display: block;
   transition: 0.25s;
 }
 .downloadPDF:hover {
   transition: 0.25s;
   background: #eeeeee;
+}
+.amatyc-img {
+  border-radius: 7px;
+  filter: grayscale(100%);
+  width: 75%;
+  margin-top: 40px;
 }
 /* 01 */
 /* 02 */
