@@ -597,7 +597,6 @@ nav {
 /* 10 */
 @media (max-width: 600px) {
   .landing-image {
-    border: 2px solid red;
     width: 75%;
   }
   .mainTitle {
