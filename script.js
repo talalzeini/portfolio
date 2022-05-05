@@ -58,8 +58,8 @@ function deactivate_job(ids) {
   }
   title.innerHTML = "";
   paragraph.innerHTML = "";
-}
-
+}      
+       
 function choose_job(id) {
   ids = ["target", "amazon", "apple"];
   var activeID = document.getElementById(id);
