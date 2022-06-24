@@ -7,9 +7,6 @@ function find_age(dob) {
 
 document.getElementById("age").innerText = find_age(dob);
 
-let title = document.getElementById("job-title");
-let paragraph = document.getElementById("job-paragraph");
-
 function wink() {
   document.getElementById("profile-image").src = "images/bitmoji/wink.webp";
 }
@@ -47,4 +44,20 @@ function shuffle_skills() {
   setTimeout(shuffle_skills, 3000);
   show_skills();
 }
+document.getElementById("amatyc").classList.remove("hide");
+document.getElementById("c").classList.add("hide");
+function switch_school_projects(id) {
+  if (id === "srl") {
+    document.getElementById("amatyc").classList.remove("hide");
+    document.getElementById("srl").classList.add("active");
+    document.getElementById("c").classList.add("hide");
+    document.getElementById("pi").classList.remove("active");
+  } else if (id === "pi") {
+    document.getElementById("c").classList.remove("hide");
+    document.getElementById("pi").classList.add("active");
+    document.getElementById("amatyc").classList.add("hide");
+    document.getElementById("srl").classList.remove("active");
+  }
+}
+
 shuffle_skills();

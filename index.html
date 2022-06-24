@@ -142,42 +142,75 @@
       <h1 class="name">SCHOOL PROJECTS</h1>
       <hr class="hr-50" />
       <br />
-      <!-- <div class="achievements">
-        <div class='school-project'>Rapberry Pi</div>
-        <div class="school-project active">
-          AMATYC
-          <span class="srl-label">SRL</span>
+      <div class="achievements">
+        <div
+          class="school-project"
+          id="pi"
+          onclick="switch_school_projects(this.id)"
+        >
+          Rapberry Pi
         </div>
-      </div> -->
+        <div
+          class="school-project active"
+          id="srl"
+          onclick="switch_school_projects(this.id)"
+        >
+          SRL
+        </div>
+      </div>
       <br />
-      <i style="font-size: 60px" class="fas fa-satellite"></i>
-      <h2>AMATYC<br />Student Research League</h2>
-      <br />
-      <button
-        aria-label="READ ARTICLE"
-        class="downloadPDF"
-        onclick="window.location='https://talalzeini.com/champion.html'"
-      >
-        READ ARTICLE
-      </button>
-      <button
-        aria-label="Download PDF"
-        onclick="window.location='files/amatyc.pdf#page=5'"
-        class="downloadPDF"
-      >
-        Download PDF
-      </button>
-      <p>
-        Calculated and evaluated the amount of food that might be needed for the
-        long spaceflight to MARS, and the number of calories the crew must
-        consume in order to survive and stay health, based on the information we
-        analyzed and gathered from NASA and SpaceX, and using mathematical
-        modeling with Python.
-        <br /><br />
-        Won and received the Grand Prize of the AMATYC Student Research League
-        as a Regional Finalist and got recognized by the President and the Dean
-        of the Math and Science Department of West Valley College.
-      </p>
+      <div id="amatyc">
+        <i style="font-size: 60px" class="fas fa-satellite"></i>
+        <h2>AMATYC<br />Student Research League</h2>
+        <br />
+        <button
+          aria-label="READ ARTICLE"
+          class="downloadPDF"
+          onclick="window.location='https://talalzeini.com/champion.html'"
+        >
+          READ ARTICLE
+        </button>
+        <button
+          aria-label="Download PDF"
+          onclick="window.location='files/amatyc.pdf#page=5'"
+          class="downloadPDF"
+        >
+          Download PDF
+        </button>
+        <p>
+          Calculated and evaluated the amount of food that might be needed for
+          the long spaceflight to MARS, and the number of calories the crew must
+          consume in order to survive and stay health, based on the information
+          we analyzed and gathered from NASA and SpaceX, and using mathematical
+          modeling with Python.
+          <br /><br />
+          Won and received the Grand Prize of the AMATYC Student Research League
+          as a Regional Finalist and got recognized by the President and the
+          Dean of the Math and Science Department of West Valley College. Solved
+          a Challenge Problem “Mission to Mars - What’s for Dinner?” by
+          developing visualizing graphs and data using Python and C++, and by
+          writing a winner research paper across the United States
+        </p>
+      </div>
+      <div id="c">
+        <i style="font-size: 60px" class="fab fa-raspberry-pi"></i>
+        <h2>Raspberry Pi <br />Project</h2>
+        <br />
+
+        <button
+          aria-label="Download PDF"
+          onclick="window.location='files/pi-project.zip'"
+          class="downloadPDF"
+        >
+          Download Code
+        </button>
+        <p>
+          Developed a C program that lets Raspberry Pi sensors detect and store
+          climate data in a mySQL database giving the user options to show
+          specific data on an LCD Display
+          <br /><br />
+        </p>
+      </div>
     </div>
 
     <div>
