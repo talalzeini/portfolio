@@ -1,0 +1,117 @@
+/* */
+/* */
+/* */
+@media (max-width: 1500px) {
+  .website-link {
+    width: 35%;
+    border-radius: 7px;
+  }
+}
+@media (max-width: 1300px) {
+  .website-link {
+    width: 50%;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+  }
+  .website-link:hover {
+    top: 0;
+    cursor: pointer;
+    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0);
+  }
+}
+/* */
+/* */
+/* */
+@media (max-width: 1025px) {
+  .link {
+    width: 50%;
+  }
+  .link:hover {
+    transition: 0.25s;
+    background: white;
+  }
+  .link i {
+    color: black;
+  }
+  .about-section,
+  .experience-section {
+    width: 100%;
+  }
+  .about-section p,
+  .experience-section p {
+    width: 90%;
+  }
+  .fright {
+    float: none;
+  }
+  .fleft {
+    float: none;
+  }
+  .scroll-down {
+    width: 10px;
+    height: 10px;
+  }
+  .srl-label {
+    display: none;
+  }
+}
+/* */
+/* */
+/* */
+@media (max-width: 600px) {
+  .landing-image {
+    width: 75%;
+  }
+  .mainTitle {
+    font-size: 20px;
+  }
+}
+/* */
+/* */
+/* */
+@media (max-width: 770px) {
+  .mainTitle {
+    width: 100%;
+    font-size: 50px;
+  }
+  .website-link h2 {
+    font-size: 15px;
+  }
+  .education-image {
+    width: 30%;
+  }
+  .website-link {
+    width: 90%;
+    border-radius: 7px;
+  }
+  .scroll-down {
+    width: 8px;
+    height: 8px;
+  }
+  .profile-image {
+    width: 35%;
+  }
+  .statue-image {
+    width: 75%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+/* */
+/* */
+/* */
+@media (max-width: 300px) {
+  .mainTitle {
+    font-size: 23px;
+  }
+  .profile-image {
+    width: 50%;
+  }
+  .statue-image {
+    width: 75%;
+  }
+  .media-icons a {
+    font-size: 40px;
+  }
+}

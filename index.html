@@ -16,7 +16,8 @@
         on the internet."
     />
     <title>Talal El Zeini</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/media.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
@@ -32,7 +33,8 @@
         <p class="corner-name">
           <a
             href="mailto:talalzeini@icloud.com"
-            style="float: left; margin-left: 15px"
+            class="left"
+            aria-label="Email Me Icon"
           >
             <i class="fa fa-comment"></i>
           </a>
@@ -49,10 +51,10 @@
         <img
           id="profile-image"
           class="profile-image"
-          onmouseout="smile()"
-          onmouseover="wink()"
-          onmousedown="scream()"
-          src="images/bitmoji/profile.webp"
+          onmouseout="animateBitmoji('smile')"
+          onmouseover="animateBitmoji('wink')"
+          onmousedown="animateBitmoji('scream')"
+          src="images/bitmoji/smile.webp"
           alt=""
         />
         <h1 class="name">TALAL EL ZEINI</h1>
@@ -61,7 +63,7 @@
         <h3 id="age" class="info">Student</h3>
       </div>
       <ul class="media">
-        <li class="media-icons" style="margin-right: 10px">
+        <li class="media-icons">
           <a
             id="linked-icon"
             aria-label="LinkedIn"
@@ -69,7 +71,7 @@
             ><i class="fab fa-linkedin"></i
           ></a>
         </li>
-        <li class="media-icons">
+        <li class="media-icons middle-icon">
           <a
             id="instagram-icon"
             aria-label="Instagram"
@@ -77,7 +79,7 @@
             ><i class="fab fa-instagram-square"></i
           ></a>
         </li>
-        <li class="media-icons" style="margin-left: 10px">
+        <li class="media-icons">
           <a
             id="git-icon"
             aria-label="GitHub"
@@ -160,7 +162,7 @@
       </div>
       <br />
       <div id="amatyc">
-        <i style="font-size: 60px" class="fas fa-satellite"></i>
+        <i class="fas fa-satellite"></i>
         <h2>AMATYC<br />Student Research League</h2>
         <br />
         <button
@@ -192,8 +194,8 @@
           writing a winner research paper across the United States
         </p>
       </div>
-      <div id="c">
-        <i style="font-size: 60px" class="fab fa-raspberry-pi"></i>
+      <div id="c" class="hide">
+        <i class="fab fa-raspberry-pi"></i>
         <h2>Raspberry Pi <br />Project</h2>
         <br />
 
@@ -216,64 +218,43 @@
     <div>
       <h1 class="name">MY SKILLS</h1>
       <hr class="hr-25" />
-      <div class="education-images" style="margin-top: 50px">
-        <div style="display: block">
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-0" src="../images/skills/9.webp" alt="" />
-            </div>
-          </div>
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: left" class="fleft">
-              <img id="lang-1" src="../images/skills/3.webp" alt="" />
-            </div>
-          </div>
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: center" class="fleft">
-              <img id="lang-2" src="../images/skills/2.webp" alt="" />
-            </div>
-          </div>
-          <br />
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-3" src="../images/skills/1.webp" alt="" />
-            </div>
-          </div>
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-4" src="../images/skills/4.webp" alt="" />
-            </div>
-          </div>
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-5" src="../images/skills/5.webp" alt="" />
-            </div>
-          </div>
-          <br />
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-6" src="../images/skills/6.webp" alt="" />
-            </div>
-          </div>
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-7" src="../images/skills/7.webp" alt="" />
-            </div>
-          </div>
-          <div class="education-image" style="display: inline-block">
-            <div style="text-align: right" class="fright">
-              <img id="lang-8" src="../images/skills/8.webp" alt="" />
-            </div>
-          </div>
+      <div class="education-images">
+        <div class="education-image">
+          <img id="lang-0" src="../images/skills/9.webp" alt="" />
+        </div>
+        <div class="education-image">
+          <img id="lang-1" src="../images/skills/3.webp" alt="" />
+        </div>
+        <div class="education-image">
+          <img id="lang-2" src="../images/skills/2.webp" alt="" />
+        </div>
+        <br />
+        <div class="education-image">
+          <img id="lang-3" src="../images/skills/1.webp" alt="" />
+        </div>
+        <div class="education-image">
+          <img id="lang-4" src="../images/skills/4.webp" alt="" />
+        </div>
+        <div class="education-image">
+          <img id="lang-5" src="../images/skills/5.webp" alt="" />
+        </div>
+        <br />
+        <div class="education-image">
+          <img id="lang-6" src="../images/skills/6.webp" alt="" />
+        </div>
+        <div class="education-image">
+          <img id="lang-7" src="../images/skills/7.webp" alt="" />
+        </div>
+        <div class="education-image">
+          <img id="lang-8" src="../images/skills/7.webp" alt="" />
         </div>
       </div>
     </div>
 
-    <div id="websites"></div>
-    <div style="margin-top: 150px">
+    <div class="linksSection">
       <h1 class="name">WEBSITES</h1>
       <hr class="hr-25" />
-      <div style="margin-top: 50px">
+      <div class="linksSeperator">
         <!-- Links Tree -->
         <div
           id="726TZ00"
@@ -374,36 +355,33 @@
       </div>
     </div>
 
-    <div id="programs"></div>
-    <div style="margin-top: 150px">
+    <div class="linksSection">
       <h1 class="name">PROGRAMS</h1>
       <hr class="hr-25" />
-      <div class="website-links" style="margin-top: 50px">
-        <div style="display: block">
-          <div
-            onclick="window.location='https://github.com/talalzeini/python-programs'"
-            class="website-link"
-          >
-            <h2>Python</h2>
-          </div>
-          <div
-            onclick="window.location='https://github.com/talalzeini/4A'"
-            class="website-link"
-          >
-            <h2>Introduction to C++</h2>
-          </div>
-          <div
-            onclick="window.location='https://github.com/talalzeini/4B'"
-            class="website-link"
-          >
-            <h2>Data Structures in C++</h2>
-          </div>
-          <div
-            onclick="window.location='https://github.com/talalzeini/ASM'"
-            class="website-link"
-          >
-            <h2>Assembly</h2>
-          </div>
+      <div class="linksSeperator">
+        <div
+          onclick="window.location='https://github.com/talalzeini/python-programs'"
+          class="website-link"
+        >
+          <h2>Python</h2>
+        </div>
+        <div
+          onclick="window.location='https://github.com/talalzeini/4A'"
+          class="website-link"
+        >
+          <h2>Introduction to C++</h2>
+        </div>
+        <div
+          onclick="window.location='https://github.com/talalzeini/4B'"
+          class="website-link"
+        >
+          <h2>Data Structures in C++</h2>
+        </div>
+        <div
+          onclick="window.location='https://github.com/talalzeini/ASM'"
+          class="website-link"
+        >
+          <h2>Assembly</h2>
         </div>
       </div>
     </div>
@@ -413,9 +391,8 @@
         <div class="footer-info">
           <img
             class="statue-image"
-            style="border-radius: 0; margin-bottom: 10px"
             src="images/bitmoji/statue.webp"
-            alt=""
+            alt="statue-footer-image"
           />
           <p>TALAL EL ZEINI</p>
           <p>talalzeini@icloud.com</p>
