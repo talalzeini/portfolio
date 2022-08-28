@@ -22,6 +22,12 @@ h2 {
   font-weight: normal;
   color: white;
   -webkit-touch-callout: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .hide {
   display: none;
@@ -177,6 +183,9 @@ h2 {
   border-right: 4px solid #fff;
   -webkit-transform: translate(-50%, 0) rotate(0deg);
   animation: scroll_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+.three-skills {
+  display: block;
 }
 /* */
 /* */
@@ -379,7 +388,7 @@ nav {
   margin-top: 40px;
 }
 /* */
-.downloadPDF {
+.showPDF {
   cursor: pointer;
   font-weight: bold;
   padding: 10px 30px;
@@ -394,7 +403,7 @@ nav {
   display: block;
   transition: 0.25s;
 }
-.downloadPDF:hover {
+.showPDF:hover {
   transition: 0.25s;
   background: #eeeeee;
 }

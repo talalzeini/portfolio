@@ -4,6 +4,7 @@
 //
 //
 //
+const body = document.querySelector("body");
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const amatyc = document.getElementById("amatyc");
 const profileImage = document.getElementById("profile-image");
@@ -15,6 +16,10 @@ const bitmojiPath = "images/bitmoji/";
 const age = document.getElementById("age");
 age.innerText = getAge(dob);
 //
+body.ondragstart = () => {
+  return false;
+};
+
 function getAge(dateString) {
   var today = new Date();
   var birthDate = new Date(dateString);
