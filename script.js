@@ -24,7 +24,6 @@ function getAge(dateString) {
   var today = new Date();
   var birthDate = new Date(dateString);
   var age = today.getFullYear() - birthDate.getFullYear();
-  console.log(age);
   var m = today.getMonth() - birthDate.getMonth();
   if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
     age--;
@@ -32,9 +31,17 @@ function getAge(dateString) {
   return age;
 }
 
-function animateBitmoji(expression) {
-  profileImage.src = bitmojiPath + expression + ".webp";
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+setInterval(function () {
+  profileImage.src = bitmojiPath + "wink" + ".webp";
+}, 3000);
+
+setInterval(function () {
+  profileImage.src = bitmojiPath + "smile" + ".webp";
+}, 1750);
 
 function showSkills() {
   let arrayOfIndexes = [];
@@ -79,3 +86,12 @@ function switch_school_projects(id) {
 }
 
 shuffleSkills();
+
+var now = new Date();
+var hour = now.getHours();
+var image = document.getElementById("landing-image");
+if (hour >= 6 && hour < 18) {
+  image.src = "images/bitmoji/plane.webp";
+} else {
+  image.src = "images/bitmoji/parachute.webp";
+}

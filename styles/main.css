@@ -1,3 +1,8 @@
+:root {
+  --bg-color: #043458;
+  --font-color: #ffffff;
+  --font-size: 16px;
+}
 html {
   width: 100vw;
   min-height: 100vh;
@@ -7,7 +12,8 @@ body {
   min-height: inherit;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: var(--bg-color);
+  /* background-color: #a9bacc; light-blue */
 }
 h1,
 h2,
@@ -20,7 +26,7 @@ h2 {
 * {
   font-family: "Avenir";
   font-weight: normal;
-  color: #ffffff;
+  color: var(--font-color);
   -webkit-touch-callout: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -93,11 +99,14 @@ h2 {
 /* */
 /* */
 .hr-50 {
-  box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.5);
+  padding: 0;
+  border: 2px solid var(--font-color);
+  box-shadow: 0 0 10px 0 var(--font-color);
   width: 50%;
 }
 .hr-25 {
-  box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--font-color);
+  box-shadow: 0 0 10px 0 var(--font-color);
   width: 25%;
 }
 /* */
@@ -316,13 +325,13 @@ h2 {
   text-align: center;
   display: block;
   margin: 10px auto;
-  #ffffff-space: nowrap;
+  white-space: nowrap;
 }
 /* */
 nav {
-  box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0 10px 10px 0 #1c1c1c; */
   width: 100%;
-  background: #000000;
+  background: var(--bg-color);
   height: 60px;
   top: 0;
   margin: 0;
@@ -331,6 +340,14 @@ nav {
   overflow-y: hidden;
   position: fixed;
   z-index: 1;
+}
+nav hr {
+  width: 50%;
+  display: block;
+  margin-bottom: -5px auto;
+  padding: 0;
+  border: 2px solid var(--font-color);
+  box-shadow: 0 0 10px 0 var(--font-color);
 }
 /* */
 .job-paragraph {
