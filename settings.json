@@ -1,0 +1,29 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "editor.cursorStyle": "block",
+  "redhat.telemetry.enabled": true,
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.statusBar.visible": false,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "window.title": "${rootName}${separator}${activeFolder}",
+  "explorer.confirmDelete": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.sortImports": true
+  },
+  "tabnine.experimentalAutoImports": true,
+  "window.zoomLevel": 1
+}
