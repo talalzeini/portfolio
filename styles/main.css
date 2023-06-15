@@ -320,12 +320,22 @@ h2 {
   margin: 0 auto;
   width: 75%;
 }
-.footer-info p {
+.footer-info a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+.footer-info p,
+a {
   text-decoration: none;
   text-align: center;
   display: block;
   margin: 10px auto;
   white-space: nowrap;
+}
+.footer-info a:hover {
+  text-decoration: underline;
 }
 /* */
 nav {
