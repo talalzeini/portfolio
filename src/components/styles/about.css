@@ -1,0 +1,110 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.about-content {
+  padding: 100px;
+  max-width: 50%;
+  /* background-color: var(--theme-color); */
+  /* -webkit-animation: cloud 10s linear infinite;
+  -moz-animation: cloud 10s linear infinite;
+  animation: cloud 10s linear infinite; */
+}
+.about-title h1 {
+  font-size: 1.25rem;
+  word-wrap: nowrap;
+  margin-bottom: 20px;
+}
+.about-image {
+  flex: 1;
+  padding: 0;
+}
+.my-title {
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+.my-title h1 {
+  text-align: center;
+  box-sizing: border-box;
+  flex: 1;
+}
+.about-title {
+  margin: 25px auto;
+  display: block;
+  text-align: center;
+}
+.about-paragraph {
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  width: 50%;
+}
+.icons {
+  width: 50%;
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+}
+.icon {
+  margin: 10px;
+  display: inline-block;
+  font-size: 3em;
+}
+.profile-image {
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+  -webkit-animation: profilecloud 10s linear infinite;
+  -moz-animation: profilecloud 10s linear infinite;
+  animation: profilecloud 10s linear infinite;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid var(--font-color);
+  box-shadow: 0 0 10px 0 var(--font-color);
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    padding: 20px;
+    max-width: 100%;
+  }
+  .profile-image {
+    width: 50%;
+  }
+  .icons {
+    width: 75%;
+  }
+  .about-paragraph {
+    width: 100%;
+  }
+}
+
+@keyframes profilecloud {
+  0% {
+    border-radius: 40%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 30%;
+  }
+  50% {
+    border-radius: 30%;
+    border-top-left-radius: 50%;
+  }
+  75% {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 20%;
+  }
+
+  100% {
+    border-radius: 40%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 30%;
+  }
+}

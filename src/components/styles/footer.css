@@ -1,0 +1,28 @@
+.statue-image {
+  width: 20%;
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 0;
+}
+.footer-info {
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+.footer-info p,
+.footer-info a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  white-space: nowrap;
+}
+.footer-info a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .statue-image {
+    width: 80%;
+  }
+}

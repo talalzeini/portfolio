@@ -1,0 +1,25 @@
+/* light blue = #a7d8fe */
+/* dark blue =  #043458 */
+/* lighter dark blue = #5a698b */
+:root {
+  --bg-color: #fff;
+  --theme-color: #a7d8fe;
+  --font-color: #000;
+  --font-size: 16px;
+  --secondary-color: #555;
+}
+[data-theme="light"] {
+  --bg-color: #a7d8fe;
+  --theme-color: #fff;
+  --font-color: #000;
+  --font-size: 16px;
+  --secondary-color: #555;
+}
+
+[data-theme="dark"] {
+  --bg-color: #043458;
+  --theme-color: #000;
+  --font-color: #fff;
+  --font-size: 16px;
+  --secondary-color: #eee;
+}
