@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f38908a3.css",
-    "main.js": "/static/js/main.ccdf7e81.js",
+    "main.js": "/static/js/main.3780dd2c.js",
     "static/media/crypto-tracker.jpg": "/static/media/crypto-tracker.4d80ecfaa6a6c0658093.jpg",
     "static/media/sorting-visualizer.jpg": "/static/media/sorting-visualizer.8821be88d95ddbb0ce21.jpg",
     "static/media/link-tree.jpg": "/static/media/link-tree.58142766a98a5e585ebe.jpg",
@@ -22,10 +22,10 @@
     "static/media/snake-game.jpg": "/static/media/snake-game.044804a8bb191eccfd8d.jpg",
     "index.html": "/index.html",
     "main.f38908a3.css.map": "/static/css/main.f38908a3.css.map",
-    "main.ccdf7e81.js.map": "/static/js/main.ccdf7e81.js.map"
+    "main.3780dd2c.js.map": "/static/js/main.3780dd2c.js.map"
   },
   "entrypoints": [
     "static/css/main.f38908a3.css",
-    "static/js/main.ccdf7e81.js"
+    "static/js/main.3780dd2c.js"
   ]
 }
